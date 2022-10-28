@@ -1243,14 +1243,17 @@
 							<div class="input-control input-control--white mortgage-form__input">
 								<label for="mortgage-price" class="input-control__label">Стоимость недвижимости</label>
 								<input type="text" id="mortgage-price" class="input-control__input" placeholder="Стоимость недвижимости">
+								<div class="input-control__range" data-range-start="4800000" data-range-step="10000" data-range-min="400000" data-range-max="15000000"></div>
 							</div>
 							<div class="input-control input-control--white mortgage-form__input">
 								<label for="mortgage-start-capital" class="input-control__label">Первоначальный взнос</label>
 								<input type="text" id="mortgage-start-capital" class="input-control__input" placeholder="Первоначальный взнос">
+								<div class="input-control__range" data-range-start="960000" data-range-step="10000" data-range-min="60000" data-range-max="9000000"></div>
 							</div>
 							<div class="input-control input-control--white mortgage-form__input">
 								<label for="mortgage-date" class="input-control__label">Срок кредита</label>
 								<input type="text" id="mortgage-date" class="input-control__input" placeholder="Срок кредита">
+								<div class="input-control__range" data-range-start="25" data-range-step="1" data-range-min="12" data-range-max="72"></div>
 							</div>
 							<div class="c-info mortgage-form__info">
 								<span class="c-info__btn">Семейная ипотека</span>
@@ -1683,18 +1686,23 @@
 				</div>
 			</section>
 			<!-- end of reviews -->
-			<!-- choice form -->
-			<section class="choice-form" id="choice-form">
+			<!-- gallery -->
+			<section class="gallery" id="gallery">
+				<div class="container"></div>
+			</section>
+			<!-- end of gallery -->
+			<!-- choice -->
+			<section class="choice" id="choice">
 				<div class="container">
-					<picture class="choice-form__img">
+					<picture class="choice__img">
 						<img src="img/choice-form-01.jpg" alt="Image">
 					</picture>
-					<div class="choice-form__body">
-						<h2 class="choice-form__title">Помочь с <br>выбором?</h2>
-						<p class="choice-form__description">Оставьте заявку, и наш менеджер перезвонит вам в течении 15 минут</p>
-						<a href="#" class="choice-form__btn btn btn--light">отправить заявку</a>
+					<div class="choice__body">
+						<h2 class="choice__title">Помочь с <br>выбором?</h2>
+						<p class="choice__description">Оставьте заявку, и наш менеджер перезвонит вам в течении 15 минут</p>
+						<a href="#" class="choice__btn btn btn--light">отправить заявку</a>
 					</div>
-					<form action="#" class="choice-form__form">
+					<form action="#" class="choice-form choice__form">
 						<div class="choice-form__form-wrap">
 							<div class="input-control choice-form__input">
 								<input type="text" class="input-control__input" placeholder="Ваше имя">
@@ -1708,7 +1716,7 @@
 					</form>
 				</div>
 			</section>
-			<!-- end of choice form -->
+			<!-- end of choice -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
