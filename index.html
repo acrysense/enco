@@ -62,11 +62,13 @@
 								</svg>
 								<span class="header__elem-value">4</span>
 							</a>
-							<select class="header__select js-select">
-								<option value="0">Тюмень</option>
-								<option value="1">Екатеринбург</option>
-								<option value="2">Новый Уренгой</option>
-							</select>
+							<div class="header__select">
+								<select class="js-select">
+									<option value="0">Тюмень</option>
+									<option value="1">Екатеринбург</option>
+									<option value="2">Новый Уренгой</option>
+								</select>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -694,24 +696,177 @@
 						<h3 class="page-filters__title">Выбрать <br>квартиру <br>в Тюмени</h3>
 						<div class="page-filters__group">
 							<div class="input-control input-control--white mortgage-form__input">
-								<label for="mortgage-price" class="input-control__label">проект</label>
-								<select class="js-select">
-									<option value="0">Любой проект</option>
-									<option value="1">Айвазовский</option>
-									<option value="2">Никольский</option>
-								</select>
-							</div>
-							<div class="paeg-filters__group"></div>
-							<div class="paeg-filters__group">
-								<div class="input-control input-control--white mortgage-form__input">
-									<label for="mortgage-price" class="input-control__label">Стоимость недвижимости</label>
-									<input type="text" id="mortgage-price" class="input-control__input" placeholder="Стоимость недвижимости">
-									<div class="input-control__range" data-range-start="4800000" data-range-step="10000" data-range-min="400000" data-range-max="15000000"></div>
+								<span class="input-control__label">проект</span>
+								<div class="input-control__select">
+									<select class="js-select">
+										<option value="0">Любой проект</option>
+										<option value="1">Айвазовский</option>
+										<option value="2">Никольский</option>
+										<option value="1">Айвазовский</option>
+										<option value="2">Никольский Никольский Никольский</option>
+									</select>
 								</div>
 							</div>
-							<div class="paeg-filters__group"></div>
 						</div>
+						<div class="page-filters__group">
+							<span class="page-filters__help">Комнатность</span>
+							<div class="square-checkboxes">
+								<label for="rominess-01" class="square-checkboxes__item">
+									<input type="radio" id="rominess-01" class="square-checkboxes__input" name="roominess">
+									<span class="square-checkboxes__elem">С</span>
+								</label>
+								<label for="rominess-02" class="square-checkboxes__item">
+									<input type="radio" id="rominess-02" class="square-checkboxes__input" name="roominess">
+									<span class="square-checkboxes__elem">1</span>
+								</label>
+								<label for="rominess-03" class="square-checkboxes__item">
+									<input type="radio" id="rominess-03" class="square-checkboxes__input" name="roominess">
+									<span class="square-checkboxes__elem">2</span>
+								</label>
+								<label for="rominess-04" class="square-checkboxes__item">
+									<input type="radio" id="rominess-04" class="square-checkboxes__input" name="roominess">
+									<span class="square-checkboxes__elem">3</span>
+								</label>
+								<label for="rominess-05" class="square-checkboxes__item">
+									<input type="radio" id="rominess-05" class="square-checkboxes__input" name="roominess">
+									<span class="square-checkboxes__elem">4</span>
+								</label>
+							</div>
+						</div>
+						<div class="page-filters__group">
+							<div class="input-control input-control--white mortgage-form__input">
+								<label for="page-filters-price-start" class="input-control__label">Площадь, м<sup>2</sup></label>
+								<div class="input-control__inner">
+									<div class="input-control__group">
+										<span class="input-control__help">от</span>
+										<input type="text" id="page-filters-price-start" class="input-control__number input-control__number--min" maxlength="4" placeholder="0">
+									</div>
+									<div class="input-control__group">
+										<span class="input-control__help">до</span>
+										<input type="text" id="page-filters-price-end" class="input-control__number input-control__number--max" maxlength="4" placeholder="0">
+									</div>
+								</div>
+								<div class="input-control__range input-control__range--double" data-range-start="19" data-range-end="165" data-range-step="1" data-range-min="0" data-range-max="185"></div>
+							</div>
+						</div>
+						<div class="page-filters__group">
+							<div class="input-control input-control--white mortgage-form__input">
+								<label for="page-filters-price-start" class="input-control__label">Стоимость, млн ₽</label>
+								<div class="input-control__inner">
+									<div class="input-control__group">
+										<span class="input-control__help">от</span>
+										<input type="text" id="page-filters-price-start" class="input-control__number input-control__number--min" maxlength="4" placeholder="0">
+									</div>
+									<div class="input-control__group">
+										<span class="input-control__help">до</span>
+										<input type="text" id="page-filters-price-end" class="input-control__number input-control__number--max" maxlength="4" placeholder="0">
+									</div>
+								</div>
+								<div class="input-control__range input-control__range--double" data-range-start="4.1" data-range-end="45.7" data-range-step="1" data-range-min="1.0" data-range-max="89.99"></div>
+							</div>
+						</div>
+						<div class="paeg-filters__group"></div>
 						<a href="#" class="page-filters__btn btn">показать 1 768 квартир</a>
+					</div>
+					<div class="page-filters__inner">
+						<ul class="filters-tabs">
+							<li class="filters-tabs__item">
+								<button class="filters-tabs__tab">Угловые окна</button>
+							</li>
+							<li class="filters-tabs__item filters-tabs__item--active">
+								<button class="filters-tabs__tab">Потолок 3 метра</button>
+							</li>
+							<li class="filters-tabs__item">
+								<button class="filters-tabs__tab">Мастер спальни</button>
+							</li>
+							<li class="filters-tabs__item">
+								<button class="filters-tabs__tab">Двухуровневые</button>
+							</li>
+						</ul>
+						<div class="page-filters__controls">
+							<button class="clear-filters page-filters__clear">
+								<svg class="clear-filters__icon">
+									<use xlink:href="img/sprite.svg#icon-close-bold"></use>
+								</svg>
+								<span class="clear-filters__title">Очистить фильтр</span>
+							</button>
+							<button class="more-filters page-filters__more">
+								<span class="more-filters__title">Еще фильтры</span>
+								<span class="more-filters__icon-wrap">
+									<svg class="more-filters__icon">
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+					<div class="page-filters__inner">
+						<div class="page-filters__group">
+							<div class="input-control input-control--white mortgage-form__input">
+								<label for="page-filters-price-start" class="input-control__label">Этаж</label>
+								<div class="input-control__inner">
+									<div class="input-control__group">
+										<span class="input-control__help">от</span>
+										<input type="text" id="page-filters-price-start" class="input-control__number input-control__number--min" maxlength="4" placeholder="0">
+									</div>
+									<div class="input-control__group">
+										<span class="input-control__help">до</span>
+										<input type="text" id="page-filters-price-end" class="input-control__number input-control__number--max" maxlength="4" placeholder="0">
+									</div>
+								</div>
+								<div class="input-control__range input-control__range--double" data-range-start="3" data-range-end="17" data-range-step="1" data-range-min="1" data-range-max="20"></div>
+							</div>
+						</div>
+						<div class="page-filters__group">
+							<div class="input-control input-control--white mortgage-form__input">
+								<span class="input-control__label">Корпус</span>
+								<div class="input-control__select">
+									<select class="js-select">
+										<option value="0">Любой корпус</option>
+										<option value="1">Айвазовский</option>
+										<option value="2">Никольский</option>
+										<option value="1">Айвазовский</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="page-filters__group">
+							<div class="input-control input-control--white mortgage-form__input">
+								<span class="input-control__label">Вид из окна</span>
+								<div class="input-control__select">
+									<select class="js-select">
+										<option value="0">Любой</option>
+										<option value="1">Панарамный</option>
+										<option value="2">На горы</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="page-filters__group">
+							<span class="page-filters__help">отделка</span>
+							<div class="square-checkboxes">
+								<label for="finishing-01" class="square-checkboxes__item">
+									<input type="radio" id="finishing-01" class="square-checkboxes__input" name="finishing">
+									<span class="square-checkboxes__elem">Любая</span>
+								</label>
+								<label for="finishing-02" class="square-checkboxes__item">
+									<input type="radio" id="finishing-02" class="square-checkboxes__input" name="finishing">
+									<span class="square-checkboxes__elem">Есть</span>
+								</label>
+								<label for="finishing-03" class="square-checkboxes__item">
+									<input type="radio" id="finishing-03" class="square-checkboxes__input" name="finishing">
+									<span class="square-checkboxes__elem">Нет</span>
+								</label>
+							</div>
+						</div>
+						<ul class="filters-tabs">
+							<li class="filters-tabs__item">
+								<button class="filters-tabs__tab">Не первый этаж</button>
+							</li>
+							<li class="filters-tabs__item">
+								<button class="filters-tabs__tab">Не последний этаж</button>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -1272,17 +1427,17 @@
 							<div class="input-control input-control--white mortgage-form__input">
 								<label for="mortgage-price" class="input-control__label">Стоимость недвижимости</label>
 								<input type="text" id="mortgage-price" class="input-control__input" placeholder="Стоимость недвижимости">
-								<div class="input-control__range" data-range-start="4800000" data-range-step="10000" data-range-min="400000" data-range-max="15000000"></div>
+								<div class="input-control__range input-control__range--single" data-range-start="4800000" data-range-step="10000" data-range-min="400000" data-range-max="15000000"></div>
 							</div>
 							<div class="input-control input-control--white mortgage-form__input">
 								<label for="mortgage-start-capital" class="input-control__label">Первоначальный взнос</label>
 								<input type="text" id="mortgage-start-capital" class="input-control__input" placeholder="Первоначальный взнос">
-								<div class="input-control__range" data-range-start="960000" data-range-step="10000" data-range-min="60000" data-range-max="9000000"></div>
+								<div class="input-control__range input-control__range--single" data-range-start="960000" data-range-step="10000" data-range-min="60000" data-range-max="9000000"></div>
 							</div>
 							<div class="input-control input-control--white mortgage-form__input">
 								<label for="mortgage-date" class="input-control__label">Срок кредита</label>
 								<input type="text" id="mortgage-date" class="input-control__input" placeholder="Срок кредита">
-								<div class="input-control__range" data-range-start="25" data-range-step="1" data-range-min="12" data-range-max="72"></div>
+								<div class="input-control__range input-control__range--single" data-range-start="25" data-range-step="1" data-range-min="12" data-range-max="72"></div>
 							</div>
 							<div class="c-info mortgage-form__info">
 								<span class="c-info__btn">Семейная ипотека</span>
@@ -1606,7 +1761,8 @@
 					</div>
 				</div>
 			</section>
-			<!-- news -->
+			<!-- end of news -->
+			<!-- services -->
 			<section class="services" id="services">
 				<div class="container">
 					<div class="section-heading">
