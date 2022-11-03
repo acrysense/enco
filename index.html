@@ -51,7 +51,7 @@
 							</ul>
 						</nav>
 						<div class="header__group">
-							<a href="#" class="header__elem">
+							<a href="#" class="header__elem header__elem--accent">
 								<svg class="header__elem-icon">
 									<use xlink:href="img/sprite.svg#icon-user"></use>
 								</svg>
@@ -141,6 +141,20 @@
 		<!-- end of header -->
 		<!-- menu -->
 		<div class="menu" id="menu">
+			<div class="menu__top">
+				<div class="container">
+					<div class="menu__top-inner">
+						<a href="index.html" class="menu__logotype">
+							<img src="img/logotype.svg" alt="ЭНКО">
+						</a>
+						<button class="menu__close" id="menu-close" aria-label="Закрыть">
+							<svg class="menu__close-icon">
+								<use xlink:href="img/sprite.svg#icon-close"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
 			<div class="menu__main">
 				<div class="container">
 					<div class="menu__main-mobile">
@@ -712,23 +726,23 @@
 							<span class="page-filters__help">Комнатность</span>
 							<div class="square-checkboxes">
 								<label for="rominess-01" class="square-checkboxes__item">
-									<input type="radio" id="rominess-01" class="square-checkboxes__input" name="roominess">
+									<input type="checkbox" id="rominess-01" class="square-checkboxes__input" name="roominess">
 									<span class="square-checkboxes__elem">С</span>
 								</label>
 								<label for="rominess-02" class="square-checkboxes__item">
-									<input type="radio" id="rominess-02" class="square-checkboxes__input" name="roominess">
+									<input type="checkbox" id="rominess-02" class="square-checkboxes__input" name="roominess">
 									<span class="square-checkboxes__elem">1</span>
 								</label>
 								<label for="rominess-03" class="square-checkboxes__item">
-									<input type="radio" id="rominess-03" class="square-checkboxes__input" name="roominess">
+									<input type="checkbox" id="rominess-03" class="square-checkboxes__input" name="roominess">
 									<span class="square-checkboxes__elem">2</span>
 								</label>
 								<label for="rominess-04" class="square-checkboxes__item">
-									<input type="radio" id="rominess-04" class="square-checkboxes__input" name="roominess">
+									<input type="checkbox" id="rominess-04" class="square-checkboxes__input" name="roominess">
 									<span class="square-checkboxes__elem">3</span>
 								</label>
 								<label for="rominess-05" class="square-checkboxes__item">
-									<input type="radio" id="rominess-05" class="square-checkboxes__input" name="roominess">
+									<input type="checkbox" id="rominess-05" class="square-checkboxes__input" name="roominess">
 									<span class="square-checkboxes__elem">4</span>
 								</label>
 							</div>
@@ -746,7 +760,7 @@
 										<input type="text" id="page-filters-price-end" class="input-control__number input-control__number--max" maxlength="4" placeholder="0">
 									</div>
 								</div>
-								<div class="input-control__range input-control__range--double" data-range-start="19" data-range-end="165" data-range-step="1" data-range-min="0" data-range-max="185"></div>
+								<div class="input-control__range input-control__range--double-float" data-range-start="19" data-range-end="165" data-range-step="1" data-range-min="0" data-range-max="185"></div>
 							</div>
 						</div>
 						<div class="page-filters__group">
@@ -762,45 +776,13 @@
 										<input type="text" id="page-filters-price-end" class="input-control__number input-control__number--max" maxlength="4" placeholder="0">
 									</div>
 								</div>
-								<div class="input-control__range input-control__range--double" data-range-start="4.1" data-range-end="45.7" data-range-step="1" data-range-min="1.0" data-range-max="89.99"></div>
+								<div class="input-control__range input-control__range--double-float" data-range-start="4.1" data-range-end="45.7" data-range-step="1" data-range-min="1.0" data-range-max="89.99"></div>
 							</div>
 						</div>
 						<div class="paeg-filters__group"></div>
 						<a href="#" class="page-filters__btn btn">показать 1 768 квартир</a>
 					</div>
-					<div class="page-filters__inner">
-						<ul class="filters-tabs">
-							<li class="filters-tabs__item">
-								<button class="filters-tabs__tab">Угловые окна</button>
-							</li>
-							<li class="filters-tabs__item filters-tabs__item--active">
-								<button class="filters-tabs__tab">Потолок 3 метра</button>
-							</li>
-							<li class="filters-tabs__item">
-								<button class="filters-tabs__tab">Мастер спальни</button>
-							</li>
-							<li class="filters-tabs__item">
-								<button class="filters-tabs__tab">Двухуровневые</button>
-							</li>
-						</ul>
-						<div class="page-filters__controls">
-							<button class="clear-filters page-filters__clear">
-								<svg class="clear-filters__icon">
-									<use xlink:href="img/sprite.svg#icon-close-bold"></use>
-								</svg>
-								<span class="clear-filters__title">Очистить фильтр</span>
-							</button>
-							<button class="more-filters page-filters__more">
-								<span class="more-filters__title">Еще фильтры</span>
-								<span class="more-filters__icon-wrap">
-									<svg class="more-filters__icon">
-										<use xlink:href="img/sprite.svg#icon-caret"></use>
-									</svg>
-								</span>
-							</button>
-						</div>
-					</div>
-					<div class="page-filters__inner">
+					<div class="page-filters__inner page-filters__inner--hidden page-filters__inner--hide">
 						<div class="page-filters__group">
 							<div class="input-control input-control--white mortgage-form__input">
 								<label for="page-filters-price-start" class="input-control__label">Этаж</label>
@@ -867,6 +849,38 @@
 								<button class="filters-tabs__tab">Не последний этаж</button>
 							</li>
 						</ul>
+					</div>
+					<div class="page-filters__inner">
+						<ul class="filters-tabs">
+							<li class="filters-tabs__item">
+								<button class="filters-tabs__tab">Угловые окна</button>
+							</li>
+							<li class="filters-tabs__item filters-tabs__item--active">
+								<button class="filters-tabs__tab">Потолок 3 метра</button>
+							</li>
+							<li class="filters-tabs__item">
+								<button class="filters-tabs__tab">Мастер спальни</button>
+							</li>
+							<li class="filters-tabs__item">
+								<button class="filters-tabs__tab">Двухуровневые</button>
+							</li>
+						</ul>
+						<div class="page-filters__controls">
+							<button class="clear-filters page-filters__clear">
+								<svg class="clear-filters__icon">
+									<use xlink:href="img/sprite.svg#icon-close-bold"></use>
+								</svg>
+								<span class="clear-filters__title">Очистить фильтр</span>
+							</button>
+							<button class="page-filters__more more-filters">
+								<span class="more-filters__title">Еще фильтры</span>
+								<span class="more-filters__icon-wrap">
+									<svg class="more-filters__icon">
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -2320,6 +2334,15 @@
 		<!-- end of footer -->
 	</div>
 	<!-- end of wrapper -->
+	<!-- cookies -->
+	<div class="cookies" id="cookies">
+		<div class="cookies__body">
+			<h3 class="cookies__title">Мы используем файлы cookies для хранения данных</h3>
+			<p class="cookies__description">Пожалуйста, ознакомьтесь с <a href="#">политикой конфиденциальности</a>.</p>
+		</div>
+		<a href="#" class="cookies__btn btn btn--light">принять и продолжить</a>
+	</div>
+	<!-- end of cookies -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
