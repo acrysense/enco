@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ЭНКО - Навигация</title>
+	<title>ЭНКО - Аренда коммерческой недвижимости</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -15,7 +15,7 @@
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
-		<header class="header @@header" id="header">
+		<header class="header header--transparent" id="header">
 			<div class="header__top">
 				<div class="container">
 					<div class="header__wrapper">
@@ -492,25 +492,559 @@
 		</div>
 		<!-- end of menu -->
 		<!-- content -->
-		<div class="wrapper__content">
-			<div class="container">
-				<nav class="site-nav">
-					<ul class="site-nav__list">
-						<li class="site-nav__item">
-							<a href="main.html" class="site-nav__link">Главная</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="purchase-methods.html" class="site-nav__link">Способы покупки</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="clients.html" class="site-nav__link">Клиентам</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="services.html" class="site-nav__link">Сервисы от СВОИХ</a>
-						</li>
-					</ul>
-				</nav>
+		<div class="wrapper__content wrapper__content--main">
+			<!-- main inner -->
+			<div class="main-inner" id="main-inner" style="background-image: url(img/commercial-real-estate-bg.jpg);">
+				<div class="container">
+					<div class="main-inner__wrap">
+						<div class="main-inner__top">
+							<a href="services.html" class="main-inner__back">
+								<svg class="main-inner__back-icon">
+									<use xlink:href="img/sprite.svg#icon-arrow-back"></use>
+								</svg>
+								<span class="main-inner__back-title">Назад</span>
+							</a>
+							<nav class="breadcrumb breadcrumb--white main-inner__breadcrumb" aria-label="Breadcrumb">
+								<ol class="breadcrumb__list">
+									<li class="breadcrumb__item">
+										<a href="main.html" class="breadcrumb__link">Главная</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="clients.html" class="breadcrumb__link">Клиентам</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="services.html" class="breadcrumb__link">Сервисы от СВОИх</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="commercial-real-estate.html" class="breadcrumb__link">Аренда коммерческой недвижимости</a>
+									</li>
+								</ol>
+							</nav>
+						</div>
+						<div class="main-inner__main main-inner__main--center">
+							<h1 class="main-inner__heading">Аренда коммерческой недвижимости</h1>
+							<p class="main-inner__description">
+								Мы заинтересованы в потоке клиентов для вашего бизнеса, поэтому размещаем коммерческие помещения вдоль улиц с большим пешеходным трафиком.
+							</p>
+							<a href="#" class="main-inner__btn btn btn--light">Оставить заявку</a>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!-- end of main inner -->
+			<!-- block information -->
+			<div class="block-information" id="block-information">
+				<div class="container">
+					<div class="block-heading">
+						<div class="block-heading__wrapper">
+							<h3 class="block-heading__title">Начните свой бизнес в наших жилых комплексах!</h3>
+							<p class="block-heading__description">Мы изучили потребности тех, кто выбрал жизнь в наших кварталах. Теперь ищем партнеров, которые хотят строить бизнес на прочном фундаменте.</p>
+						</div>
+					</div>
+					<div class="block-information__slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article class="block-information__item">
+										<h3 class="block-information__title">Аренда помещения</h3>
+										<p class="block-information__description">Специалисты компании «ЭНКО» подберут помещение с учетом вида бизнеса, локации, трафика и технических требований помещений.</p>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="block-information__item">
+										<h3 class="block-information__title">Бизнес по франшизе</h3>
+										<p class="block-information__description">Возможность аренды помещения, которое акцептовано франчайзером.</p>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="block-information__item">
+										<h3 class="block-information__title">Сопровождение</h3>
+										<p class="block-information__description">Группа «Самолет» предлагает единый и прозрачный договор аренды, а также сопровождение в процессе ремонта помещения.</p>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="block-information__item">
+										<h3 class="block-information__title">Остались вопросы?</h3>
+										<p class="block-information__description">Закажите консультацию у специалиста по коммерческой недвижимости!</p>
+										<a href="#" class="block-information__btn btn">Консультация</a>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of block information -->
+			<!-- block advantages -->
+			<div class="block-advantages block-advantages--border" id="block-advantages">
+				<div class="container">
+					<div class="block-heading">
+						<div class="block-heading__wrapper">
+							<h3 class="block-heading__title">Особенности помещений</h3>
+						</div>
+					</div>
+					<div class="block-advantages__wrapper">
+						<article class="block-advantages__item block-advantages__item--white">
+							<picture class="block-advantages__img">
+								<img src="img/block-advantages-01.jpg" alt="Image">
+							</picture>
+							<div class="block-advantages__body">
+								<h3 class="block-advantages__title">3,2 до 6,2 м</h3>
+								<p class="block-advantages__description">Высота потолков</p>
+							</div>
+						</article>
+						<article class="block-advantages__item block-advantages__item--flex block-advantages__item--white">
+							<picture class="block-advantages__img">
+								<img src="img/block-advantages-02.jpg" alt="Image">
+							</picture>
+							<div class="block-advantages__body">
+								<h3 class="block-advantages__title">От 200 кг/м²</h3>
+								<p class="block-advantages__description">Нагрузка на пол</p>
+							</div>
+						</article>
+						<article class="block-advantages__item" style="background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(img/block-advantages-bg-01.jpg);">
+							<div class="block-advantages__body">
+								<h3 class="block-advantages__title">От 200 Вт/м²</h3>
+								<p class="block-advantages__description">Эл. мощность</p>
+							</div>
+						</article>
+						<article class="block-advantages__item" style="background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(img/block-advantages-bg-01.jpg);">
+							<div class="block-advantages__body">
+								<h3 class="block-advantages__title">Холодное и горячее <br>водоснабжение</h3>
+							</div>
+						</article>
+						<article class="block-advantages__item block-advantages__item--flex">
+							<picture class="block-advantages__icon">
+								<img src="img/icon-layout.svg" alt="Image">
+							</picture>
+							<div class="block-advantages__body">
+								<h3 class="block-advantages__title">От 2,5 м</h3>
+								<p class="block-advantages__description">Высота витринных окон</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+			<!-- end of block advantages -->
+			<!-- our projects -->
+			<section class="our-projects" id="our-projects">
+				<div class="container">
+					<div class="switcher">
+						<div class="our-projects__top">
+							<h2 class="our-projects__heading">наши проекты</h2>
+							<div class="our-projects__group">
+								<ul class="c-tabs our-projects__tabs">
+									<li class="c-tabs__item c-tabs__item--active">
+										<button class="c-tabs__tab">Все проекты</button>
+									</li>
+									<li class="c-tabs__item">
+										<button class="c-tabs__tab">Готовые</button>
+									</li>
+								</ul>
+							</div>
+							<div class="our-projects__group">
+								<ul class="c-tabs our-projects__tabs">
+									<li class="c-tabs__item c-tabs__item--active">
+										<button class="c-tabs__tab">Все города</button>
+									</li>
+									<li class="c-tabs__item">
+										<button class="c-tabs__tab">Тюмень</button>
+									</li>
+									<li class="c-tabs__item">
+										<button class="c-tabs__tab">Екатеринбург</button>
+									</li>
+								</ul>
+							</div>
+							<div class="our-projects__group">
+								<ul class="switcher__list">
+									<li class="switcher__item"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="switcher__wrapper">
+							<div class="our-projects__wrapper">
+								<div class="our-projects__item">
+									<div class="our-projects__slider">
+										<div class="swiper">
+											<div class="swiper-wrapper">
+												<a href="#" class="swiper-slide">
+													<picture class="our-projects__img">
+														<img src="img/our-projects-01.jpg" alt="Image">
+													</picture>
+												</a>
+												<a href="#" class="swiper-slide">
+													<picture class="our-projects__img">
+														<img src="img/our-projects-02.jpg" alt="Image">
+													</picture>
+												</a>
+												<a href="#" class="swiper-slide">
+													<picture class="our-projects__img">
+														<img src="img/our-projects-03.jpg" alt="Imageg">
+													</picture>
+												</a>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+										<span class="our-projects__slider-status">
+											<span class="our-projects__status our-projects__status--dark">Комфорт-класс</span>
+											<span class="our-projects__status">рассрочка 0%</span>
+										</span>
+									</div>
+									<div class="our-projects__body">
+										<div class="our-projects__topping">
+											<div class="our-projects__inner our-projects__inner--start">
+												<a href="#" class="our-projects__title">Айвазовский Сити</a>
+												<span class="our-projects__price">от 4.1 млн ₽</span>
+											</div>
+											<div class="our-projects__inner">
+												<span class="our-projects__amount">67 квартир в продаже</span>
+												<span class="our-projects__meters"><b>41,6 - 167.9</b> м<sup>2</sup></span>
+											</div>
+										</div>
+										<div class="our-projects__main">
+											<div class="our-projects__inner">
+												<address class="our-projects__location">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-location"></use>
+													</svg>
+													<span>Дом Обороны</span>
+												</address>
+												<span class="our-projects__location">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-car"></use>
+													</svg>
+													<span>8 мин. → центр</span>
+												</span>
+											</div>
+											<div class="our-projects__info">
+												<ul class="c-price-list our-projects__list">
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">21</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">С</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 1.9 млн ₽</span>
+															</div>
+														</div>
+													</li>
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">13</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">1К</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 2.3 млн ₽</span>
+															</div>
+														</div>
+													</li>
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">9</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">2К</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 3.1 млн ₽</span>
+															</div>
+														</div>
+													</li>
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">14</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">3К</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 1.7 млн ₽</span>
+															</div>
+														</div>
+													</li>
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">12</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">4К</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 5.9 млн ₽</span>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="our-projects__bottom">
+											<div class="c-readiness our-projects__readiness">
+												<span class="c-readiness__title">Готовность</span>
+												<div class="c-readiness__group" style="--readiness-percent: 35%;">
+													<div class="c-readiness__progress">
+														<div class="c-readiness__progress-bar"></div>
+													</div>
+													<span class="c-readiness__value">35%</span>
+												</div>
+											</div>
+											<span class="our-projects__help">Срок сдачи II квартал 2022</span>
+										</div>
+										<svg class="our-projects__arrow">
+											<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="our-projects__item">
+									<div class="our-projects__slider">
+										<div class="swiper">
+											<div class="swiper-wrapper">
+												<a href="#" class="swiper-slide">
+													<picture class="our-projects__img">
+														<img src="img/our-projects-01.jpg" alt="Image">
+													</picture>
+												</a>
+												<a href="#" class="swiper-slide">
+													<picture class="our-projects__img">
+														<img src="img/our-projects-02.jpg" alt="Image">
+													</picture>
+												</a>
+												<a href="#" class="swiper-slide">
+													<picture class="our-projects__img">
+														<img src="img/our-projects-03.jpg" alt="Imageg">
+													</picture>
+												</a>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+										<span class="our-projects__slider-status">
+											<span class="our-projects__status our-projects__status--dark">Комфорт-класс</span>
+											<span class="our-projects__status">рассрочка 0%</span>
+										</span>
+									</div>
+									<div class="our-projects__body">
+										<div class="our-projects__topping">
+											<div class="our-projects__inner our-projects__inner--start">
+												<a href="#" class="our-projects__title">Никольский</a>
+												<span class="our-projects__price">от 4.1 млн ₽</span>
+											</div>
+											<div class="our-projects__inner">
+												<span class="our-projects__amount">67 квартир в продаже</span>
+												<span class="our-projects__meters"><b>41,6 - 167.9</b> м<sup>2</sup></span>
+											</div>
+										</div>
+										<div class="our-projects__main">
+											<div class="our-projects__inner">
+												<address class="our-projects__location">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-location"></use>
+													</svg>
+													<span>Червишевский тракт</span>
+												</address>
+												<span class="our-projects__location">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-human"></use>
+													</svg>
+													<span>15 мин. → центр</span>
+												</span>
+											</div>
+											<div class="our-projects__info">
+												<ul class="c-price-list our-projects__list">
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">21</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">С</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 1.9 млн ₽</span>
+															</div>
+														</div>
+													</li>
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">13</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">1К</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 2.3 млн ₽</span>
+															</div>
+														</div>
+													</li>
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">9</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">2К</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 3.1 млн ₽</span>
+															</div>
+														</div>
+													</li>
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">14</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">3К</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 1.7 млн ₽</span>
+															</div>
+														</div>
+													</li>
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">12</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">4К</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 5.9 млн ₽</span>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="our-projects__bottom">
+											<div class="c-readiness our-projects__readiness">
+												<span class="c-readiness__title">Готовность</span>
+												<div class="c-readiness__group" style="--readiness-percent: 35%;">
+													<div class="c-readiness__progress">
+														<div class="c-readiness__progress-bar"></div>
+													</div>
+													<span class="c-readiness__value">35%</span>
+												</div>
+											</div>
+											<span class="our-projects__help">Срок сдачи II квартал 2022</span>
+										</div>
+										<svg class="our-projects__arrow">
+											<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="our-projects__item">
+									<div class="our-projects__slider">
+										<div class="swiper">
+											<div class="swiper-wrapper">
+												<a href="#" class="swiper-slide">
+													<picture class="our-projects__img">
+														<img src="img/our-projects-01.jpg" alt="Image">
+													</picture>
+												</a>
+												<a href="#" class="swiper-slide">
+													<picture class="our-projects__img">
+														<img src="img/our-projects-02.jpg" alt="Image">
+													</picture>
+												</a>
+												<a href="#" class="swiper-slide">
+													<picture class="our-projects__img">
+														<img src="img/our-projects-03.jpg" alt="Imageg">
+													</picture>
+												</a>
+											</div>
+											<div class="swiper-pagination"></div>
+										</div>
+										<span class="our-projects__slider-status">
+											<span class="our-projects__status our-projects__status--dark">Комфорт-класс</span>
+											<span class="our-projects__status">рассрочка 0%</span>
+										</span>
+									</div>
+									<div class="our-projects__body">
+										<div class="our-projects__topping">
+											<div class="our-projects__inner our-projects__inner--start">
+												<a href="#" class="our-projects__title">преображенский на московском</a>
+												<span class="our-projects__price">от 4.1 млн ₽</span>
+											</div>
+											<div class="our-projects__inner">
+												<span class="our-projects__amount">67 квартир в продаже</span>
+												<span class="our-projects__meters"><b>41,6 - 167.9</b> м<sup>2</sup></span>
+											</div>
+										</div>
+										<div class="our-projects__main">
+											<div class="our-projects__inner">
+												<address class="our-projects__location">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-location"></use>
+													</svg>
+													<span>Туринская Слобода</span>
+												</address>
+												<span class="our-projects__location">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-car"></use>
+													</svg>
+													<span>8 мин. → центр</span>
+												</span>
+											</div>
+											<div class="our-projects__info">
+												<ul class="c-price-list our-projects__list">
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">21</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">С</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 1.9 млн ₽</span>
+															</div>
+														</div>
+													</li>
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">13</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">1К</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 2.3 млн ₽</span>
+															</div>
+														</div>
+													</li>
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">9</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">2К</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 3.1 млн ₽</span>
+															</div>
+														</div>
+													</li>
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">14</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">3К</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 1.7 млн ₽</span>
+															</div>
+														</div>
+													</li>
+													<li class="c-price-list__item">
+														<div class="c-price-list__elem">
+															<span class="c-price-list__value">12</span>
+															<div class="c-price-list__group">
+																<span class="c-price-list__title">4К</span>
+																<div class="c-price-list__delimiter"></div>
+																<span class="c-price-list__title">от 5.9 млн ₽</span>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="our-projects__bottom">
+											<div class="c-readiness our-projects__readiness">
+												<span class="c-readiness__title">Готовность</span>
+												<div class="c-readiness__group" style="--readiness-percent: 65%;">
+													<div class="c-readiness__progress">
+														<div class="c-readiness__progress-bar"></div>
+													</div>
+													<span class="c-readiness__value">65%</span>
+												</div>
+											</div>
+											<span class="our-projects__help">Срок сдачи II квартал 2022</span>
+										</div>
+										<svg class="our-projects__arrow">
+											<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="switcher__wrapper"></div>
+					</div>
+				</div>
+			</section>
+			<!-- end of our projects -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->

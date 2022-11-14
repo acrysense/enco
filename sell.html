@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ЭНКО - Навигация</title>
+	<title>ЭНКО - Продажа вторичной недвижимости</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -15,7 +15,7 @@
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
-		<header class="header @@header" id="header">
+		<header class="header header--transparent" id="header">
 			<div class="header__top">
 				<div class="container">
 					<div class="header__wrapper">
@@ -492,25 +492,46 @@
 		</div>
 		<!-- end of menu -->
 		<!-- content -->
-		<div class="wrapper__content">
-			<div class="container">
-				<nav class="site-nav">
-					<ul class="site-nav__list">
-						<li class="site-nav__item">
-							<a href="main.html" class="site-nav__link">Главная</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="purchase-methods.html" class="site-nav__link">Способы покупки</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="clients.html" class="site-nav__link">Клиентам</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="services.html" class="site-nav__link">Сервисы от СВОИХ</a>
-						</li>
-					</ul>
-				</nav>
+		<div class="wrapper__content wrapper__content--main">
+			<!-- main inner -->
+			<div class="main-inner" id="main-inner" style="background-image: url(img/sell-bg.jpg);">
+				<div class="container">
+					<div class="main-inner__wrap">
+						<div class="main-inner__top">
+							<a href="services.html" class="main-inner__back">
+								<svg class="main-inner__back-icon">
+									<use xlink:href="img/sprite.svg#icon-arrow-back"></use>
+								</svg>
+								<span class="main-inner__back-title">Назад</span>
+							</a>
+							<nav class="breadcrumb breadcrumb--white main-inner__breadcrumb" aria-label="Breadcrumb">
+								<ol class="breadcrumb__list">
+									<li class="breadcrumb__item">
+										<a href="main.html" class="breadcrumb__link">Главная</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="clients.html" class="breadcrumb__link">Клиентам</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="services.html" class="breadcrumb__link">Сервисы от СВОИх</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="sell.html" class="breadcrumb__link">Продажа вторичной недвижимости</a>
+									</li>
+								</ol>
+							</nav>
+						</div>
+						<div class="main-inner__main main-inner__main--center">
+							<h1 class="main-inner__heading">Продажа вторичной недвижимости</h1>
+							<p class="main-inner__description">
+								Новый сервис от ЭНКО, который поможет <br>купить жильё у наших собственников
+							</p>
+							<a href="#" class="main-inner__btn btn btn--light">Оставить заявку</a>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!-- end of main inner -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->

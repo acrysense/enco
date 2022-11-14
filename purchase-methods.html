@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ЭНКО - Навигация</title>
+	<title>ЭНКО - Способы покупки</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -493,24 +493,141 @@
 		<!-- end of menu -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<div class="container">
-				<nav class="site-nav">
-					<ul class="site-nav__list">
-						<li class="site-nav__item">
-							<a href="main.html" class="site-nav__link">Главная</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="purchase-methods.html" class="site-nav__link">Способы покупки</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="clients.html" class="site-nav__link">Клиентам</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="services.html" class="site-nav__link">Сервисы от СВОИХ</a>
-						</li>
-					</ul>
-				</nav>
+			<!-- page top -->
+			<div class="page-top" id="page-top">
+				<div class="container">
+					<div class="page-top__inner">
+						<a href="main.html" class="page-top__back">
+							<svg class="page-top__back-icon">
+								<use xlink:href="img/sprite.svg#icon-arrow-back"></use>
+							</svg>
+							<span class="page-top__back-title">Назад</span>
+						</a>
+						<nav class="breadcrumb page-top__breadcrumb" aria-label="Breadcrumb">
+							<ol class="breadcrumb__list">
+								<li class="breadcrumb__item">
+									<a href="main.html" class="breadcrumb__link">Главная</a>
+								</li>
+								<li class="breadcrumb__item">
+									<a href="purchase-methods.html" class="breadcrumb__link">Способы покупки</a>
+								</li>
+							</ol>
+						</nav>
+					</div>
+					<h1 class="page-top__heading">Способы покупки</h1>
+					<div class="page-top__nav page-navigation">
+						<a href="trade-in.html" class="page-navigation__item">
+							<picture class="page-navigation__icon">
+								<img src="img/purchase-methods-icon-01.svg" alt="Icon">
+							</picture>
+							<div class="page-navigation__group">
+								<div class="page-navigation__body">
+									<span class="page-navigation__title">Трейд-ин</span>
+									<span class="page-navigation__tags">Обмен вашей квартиры</span>
+									<span class="page-navigation__tags">Обмен от СВОИх</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="page-navigation__item">
+							<picture class="page-navigation__icon">
+								<img src="img/purchase-methods-icon-01.svg" alt="Icon">
+							</picture>
+							<div class="page-navigation__group">
+								<div class="page-navigation__body">
+									<span class="page-navigation__title">Ипотека онлайн</span>
+									<span class="page-navigation__help">Описание способа покупки</span>
+								</div>
+								<svg class="page-navigation__arrow">
+									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+								</svg>
+							</div>
+						</a>
+						<a href="#" class="page-navigation__item">
+							<picture class="page-navigation__icon">
+								<img src="img/purchase-methods-icon-01.svg" alt="Icon">
+							</picture>
+							<div class="page-navigation__group">
+								<div class="page-navigation__body">
+									<span class="page-navigation__title">100% оплата</span>
+									<span class="page-navigation__help">Описание способа покупки</span>
+								</div>
+								<svg class="page-navigation__arrow">
+									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+								</svg>
+							</div>
+						</a>
+						<a href="#" class="page-navigation__item">
+							<picture class="page-navigation__icon">
+								<img src="img/purchase-methods-icon-01.svg" alt="Icon">
+							</picture>
+							<div class="page-navigation__group">
+								<div class="page-navigation__body">
+									<span class="page-navigation__title">Рассрочка</span>
+									<span class="page-navigation__help">Описание способа покупки</span>
+								</div>
+								<svg class="page-navigation__arrow">
+									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+								</svg>
+							</div>
+						</a>
+						<a href="#" class="page-navigation__item">
+							<picture class="page-navigation__icon">
+								<img src="img/purchase-methods-icon-01.svg" alt="Icon">
+							</picture>
+							<div class="page-navigation__group">
+								<div class="page-navigation__body">
+									<span class="page-navigation__title">Материнский капитал</span>
+									<span class="page-navigation__help">Описание способа покупки</span>
+								</div>
+								<svg class="page-navigation__arrow">
+									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+								</svg>
+							</div>
+						</a>
+						<a href="#" class="page-navigation__item">
+							<picture class="page-navigation__icon">
+								<img src="img/purchase-methods-icon-01.svg" alt="Icon">
+							</picture>
+							<div class="page-navigation__group">
+								<div class="page-navigation__body">
+									<span class="page-navigation__title">Дистанционная покупка</span>
+									<span class="page-navigation__help">Описание способа покупки</span>
+								</div>
+								<svg class="page-navigation__arrow">
+									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+								</svg>
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
+			<!-- end of page top -->
+			<!-- choice -->
+			<section class="choice choice--no-border" id="choice">
+				<div class="container">
+					<picture class="choice__img">
+						<img src="img/choice-form-01.jpg" alt="Image">
+					</picture>
+					<div class="choice__body">
+						<h2 class="choice__title">Помочь с <br>выбором?</h2>
+						<p class="choice__description">Оставьте заявку, и наш менеджер перезвонит вам в течении 15 минут</p>
+						<a href="#" class="choice__btn btn btn--light">отправить заявку</a>
+					</div>
+					<form action="#" class="choice-form choice__form">
+						<div class="choice-form__form-wrap">
+							<div class="input-control choice-form__input">
+								<input type="text" class="input-control__input" placeholder="Ваше имя">
+							</div>
+							<div class="input-control choice-form__input">
+								<input type="text" class="input-control__input" placeholder="Телефон">
+							</div>
+							<button class="choice-form__btn btn">отправить</button>
+						</div>
+						<p class="choice-form__help">Нажимая кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</p>
+					</form>
+				</div>
+			</section>
+			<!-- end of choice -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
