@@ -491,6 +491,111 @@
 			</div>
 		</div>
 		<!-- end of menu -->
+		<!-- filter dropdown -->
+		<button class="filter-dropdown-toggle" aria-label="Открыть/закрыть" id="filter-dropdown-toggle">
+			<svg class="filter-dropdown-toggle__icon">
+				<use xlink:href="img/sprite.svg#icon-filter"></use>
+			</svg>
+			<svg class="filter-dropdown-toggle__icon filter-dropdown-toggle__icon--close">
+				<use xlink:href="img/sprite.svg#icon-close"></use>
+			</svg>
+		</button>
+		<div class="filter-dropdown" id="filter-dropdown">
+			<div class="filter-dropdown__top">
+				<a href="#" class="filter-dropdown__back">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+					</svg>
+					<span>Назад</span>
+				</a>
+				<div class="filter-dropdown__heading">Фильтр</div>
+				<a href="#" class="filter-dropdown__back">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+					<span>Сбросить</span>
+				</a>
+			</div>
+			<div class="filter-dropdown__wrap">
+				<div class="filter-dropdown__wrapper">
+					<div class="filter-dropdown__group">
+						<div class="input-control input-control--white mortgage-form__input">
+							<span class="input-control__label">проект</span>
+							<div class="input-control__select">
+								<select class="js-select">
+									<option value="0">Любой проект</option>
+									<option value="1">Айвазовский</option>
+									<option value="2">Никольский</option>
+									<option value="1">Айвазовский</option>
+									<option value="2">Никольский Никольский Никольский</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="filter-dropdown__group">
+						<span class="filter-dropdown__help">Комнатность</span>
+						<div class="square-checkboxes">
+							<label for="rominess-01" class="square-checkboxes__item">
+								<input type="checkbox" id="rominess-01" class="square-checkboxes__input" name="roominess">
+								<span class="square-checkboxes__elem">С</span>
+							</label>
+							<label for="rominess-02" class="square-checkboxes__item">
+								<input type="checkbox" id="rominess-02" class="square-checkboxes__input" name="roominess">
+								<span class="square-checkboxes__elem">1</span>
+							</label>
+							<label for="rominess-03" class="square-checkboxes__item">
+								<input type="checkbox" id="rominess-03" class="square-checkboxes__input" name="roominess">
+								<span class="square-checkboxes__elem">2</span>
+							</label>
+							<label for="rominess-04" class="square-checkboxes__item">
+								<input type="checkbox" id="rominess-04" class="square-checkboxes__input" name="roominess">
+								<span class="square-checkboxes__elem">3</span>
+							</label>
+							<label for="rominess-05" class="square-checkboxes__item">
+								<input type="checkbox" id="rominess-05" class="square-checkboxes__input" name="roominess">
+								<span class="square-checkboxes__elem">4</span>
+							</label>
+						</div>
+					</div>
+					<div class="filter-dropdown__group">
+						<div class="input-control input-control--white mortgage-form__input">
+							<label for="filter-dropdown-price-start" class="input-control__label">Площадь, м<sup>2</sup></label>
+							<div class="input-control__inner">
+								<div class="input-control__group">
+									<span class="input-control__help">от</span>
+									<input type="text" id="filter-dropdown-price-start" class="input-control__number input-control__number--min" maxlength="4" placeholder="0">
+								</div>
+								<div class="input-control__group">
+									<span class="input-control__help">до</span>
+									<input type="text" id="filter-dropdown-price-end" class="input-control__number input-control__number--max" maxlength="4" placeholder="0">
+								</div>
+							</div>
+							<div class="input-control__range input-control__range--double-float" data-range-start="19" data-range-end="165" data-range-step="1" data-range-min="0" data-range-max="185"></div>
+						</div>
+					</div>
+					<div class="filter-dropdown__group">
+						<div class="input-control input-control--white mortgage-form__input">
+							<label for="filter-dropdown-price-start" class="input-control__label">Стоимость, млн ₽</label>
+							<div class="input-control__inner">
+								<div class="input-control__group">
+									<span class="input-control__help">от</span>
+									<input type="text" id="filter-dropdown-price-start" class="input-control__number input-control__number--min" maxlength="4" placeholder="0">
+								</div>
+								<div class="input-control__group">
+									<span class="input-control__help">до</span>
+									<input type="text" id="filter-dropdown-price-end" class="input-control__number input-control__number--max" maxlength="4" placeholder="0">
+								</div>
+							</div>
+							<div class="input-control__range input-control__range--double-float" data-range-start="4.1" data-range-end="45.7" data-range-step="1" data-range-min="1.0" data-range-max="89.99"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter-dropdown__bottom">
+				<button class="filter-dropdown__btn btn">показать 1 768 квартир</button>
+			</div>
+		</div>
+		<!-- end of filter dropdown -->
 		<!-- content -->
 		<div class="wrapper__content wrapper__content--main">
 			<!-- main -->
