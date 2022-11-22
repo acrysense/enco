@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ЭНКО - Навигация</title>
+	<title>ЭНКО - Акции</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -493,33 +493,454 @@
 		<!-- end of menu -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<div class="container">
-				<nav class="site-nav">
-					<ul class="site-nav__list">
-						<li class="site-nav__item">
-							<a href="main.html" class="site-nav__link">Главная</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="purchase-methods.html" class="site-nav__link">Способы покупки</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="clients.html" class="site-nav__link">Клиентам</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="services.html" class="site-nav__link">Сервисы от СВОИХ</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="stock.html" class="site-nav__link">Акции</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="news.html" class="site-nav__link">Новости</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="reviews.html" class="site-nav__link">Отзывы</a>
-						</li>
-					</ul>
-				</nav>
+			<!-- page top -->
+			<div class="page-top page-top--border" id="page-top">
+				<div class="container">
+					<div class="page-top__inner">
+						<a href="main.html" class="page-top__back">
+							<svg class="page-top__back-icon">
+								<use xlink:href="img/sprite.svg#icon-arrow-back"></use>
+							</svg>
+							<span class="page-top__back-title">Назад</span>
+						</a>
+						<nav class="breadcrumb page-top__breadcrumb" aria-label="Breadcrumb">
+							<ol class="breadcrumb__list">
+								<li class="breadcrumb__item">
+									<a href="main.html" class="breadcrumb__link">Главная</a>
+								</li>
+								<li class="breadcrumb__item">
+									<a href="stock.html" class="breadcrumb__link">Акции</a>
+								</li>
+							</ol>
+						</nav>
+					</div>
+					<h1 class="page-top__heading">Акции</h1>
+				</div>
 			</div>
+			<!-- end of page top -->
+			<!-- stock -->
+			<section class="stock" id="stock">
+				<div class="container">
+					<div class="tabs">
+						<div class="tabs__top">
+							<ul class="tabs__list">
+								<li class="tabs__item tabs__item--active">
+									<button class="tabs__tab">Все акции</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Скидки</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Никольский</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Айвазовский</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Преображенский</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Шоколад</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">ЖК «Преображенский на Московском»</button>
+								</li>
+							</ul>
+						</div>
+						<div class="tabs__wrapper tabs__wrapper--active">
+							<div class="stock__wrapper">
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Программа лояльности</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-01.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ипотека — 2.99%</h3>
+											<p class="stock__description">Купите квартиру по уникальной ставке 2.99% на весь срок кредитования!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-02.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ремонт в подарок!</h3>
+											<p class="stock__description">Каждому покупателю акционных квартиры в ЖК «Айвазовский» - ремонт в подарок!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-03.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Меняйте квартиру на новую с выгодой</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-04.jpg" alt="Image">
+									</picture>
+								</article>
+							</div>
+						</div>
+						<div class="tabs__wrapper">
+							<div class="stock__wrapper">
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ипотека — 2.99%</h3>
+											<p class="stock__description">Купите квартиру по уникальной ставке 2.99% на весь срок кредитования!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-02.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Программа лояльности</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-01.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ремонт в подарок!</h3>
+											<p class="stock__description">Каждому покупателю акционных квартиры в ЖК «Айвазовский» - ремонт в подарок!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-03.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Меняйте квартиру на новую с выгодой</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-04.jpg" alt="Image">
+									</picture>
+								</article>
+							</div>
+						</div>
+						<div class="tabs__wrapper">
+							<div class="stock__wrapper">
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Программа лояльности</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-01.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ипотека — 2.99%</h3>
+											<p class="stock__description">Купите квартиру по уникальной ставке 2.99% на весь срок кредитования!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-02.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ремонт в подарок!</h3>
+											<p class="stock__description">Каждому покупателю акционных квартиры в ЖК «Айвазовский» - ремонт в подарок!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-03.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Меняйте квартиру на новую с выгодой</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-04.jpg" alt="Image">
+									</picture>
+								</article>
+							</div>
+						</div>
+						<div class="tabs__wrapper">
+							<div class="stock__wrapper">
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Программа лояльности</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-01.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ипотека — 2.99%</h3>
+											<p class="stock__description">Купите квартиру по уникальной ставке 2.99% на весь срок кредитования!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-02.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ремонт в подарок!</h3>
+											<p class="stock__description">Каждому покупателю акционных квартиры в ЖК «Айвазовский» - ремонт в подарок!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-03.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Меняйте квартиру на новую с выгодой</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-04.jpg" alt="Image">
+									</picture>
+								</article>
+							</div>
+						</div>
+						<div class="tabs__wrapper">
+							<div class="stock__wrapper">
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Программа лояльности</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-01.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ипотека — 2.99%</h3>
+											<p class="stock__description">Купите квартиру по уникальной ставке 2.99% на весь срок кредитования!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-02.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ремонт в подарок!</h3>
+											<p class="stock__description">Каждому покупателю акционных квартиры в ЖК «Айвазовский» - ремонт в подарок!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-03.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Меняйте квартиру на новую с выгодой</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-04.jpg" alt="Image">
+									</picture>
+								</article>
+							</div>
+						</div>
+						<div class="tabs__wrapper">
+							<div class="stock__wrapper">
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Программа лояльности</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-01.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ипотека — 2.99%</h3>
+											<p class="stock__description">Купите квартиру по уникальной ставке 2.99% на весь срок кредитования!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-02.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ремонт в подарок!</h3>
+											<p class="stock__description">Каждому покупателю акционных квартиры в ЖК «Айвазовский» - ремонт в подарок!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-03.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Меняйте квартиру на новую с выгодой</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-04.jpg" alt="Image">
+									</picture>
+								</article>
+							</div>
+						</div>
+						<div class="tabs__wrapper">
+							<div class="stock__wrapper">
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Программа лояльности</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-01.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ипотека — 2.99%</h3>
+											<p class="stock__description">Купите квартиру по уникальной ставке 2.99% на весь срок кредитования!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-02.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Ремонт в подарок!</h3>
+											<p class="stock__description">Каждому покупателю акционных квартиры в ЖК «Айвазовский» - ремонт в подарок!</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-03.jpg" alt="Image">
+									</picture>
+								</article>
+								<article class="stock__item">
+									<div class="stock__body">
+										<div class="stock__group">
+											<h3 class="stock__title">Меняйте квартиру на новую с выгодой</h3>
+											<p class="stock__description">Особые условия, выгодные предложения, скидки</p>
+										</div>
+										<a href="#" class="stock__btn btn btn--light">Подробнее</a>
+									</div>
+									<picture class="stock__img">
+										<img src="img/stock-04.jpg" alt="Image">
+									</picture>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of stock -->
+			<!-- choice -->
+			<section class="choice choice--no-border" id="choice">
+				<div class="container">
+					<picture class="choice__img">
+						<img src="img/choice-form-01.jpg" alt="Image">
+					</picture>
+					<div class="choice__body">
+						<h2 class="choice__title">Помочь с <br>выбором?</h2>
+						<p class="choice__description">Оставьте заявку, и наш менеджер перезвонит вам в течении 15 минут</p>
+						<a href="#" class="choice__btn btn btn--light">отправить заявку</a>
+					</div>
+					<form action="#" class="choice-form choice__form">
+						<div class="choice-form__form-wrap">
+							<div class="input-control choice-form__input">
+								<input type="text" class="input-control__input" placeholder="Ваше имя">
+							</div>
+							<div class="input-control choice-form__input">
+								<input type="text" class="input-control__input" placeholder="Телефон">
+							</div>
+							<button class="choice-form__btn btn">отправить</button>
+						</div>
+						<p class="choice-form__help">Нажимая кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</p>
+					</form>
+				</div>
+			</section>
+			<!-- end of choice -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
