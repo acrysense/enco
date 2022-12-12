@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ЭНКО - Навигация</title>
+	<title>ЭНКО - Финансовые инструменты</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -15,7 +15,7 @@
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
-		<header class="header @@header" id="header">
+		<header class="header header--transparent" id="header">
 			<div class="header__top">
 				<div class="container">
 					<div class="header__wrapper">
@@ -492,40 +492,338 @@
 		</div>
 		<!-- end of menu -->
 		<!-- content -->
-		<div class="wrapper__content">
-			<div class="container">
-				<nav class="site-nav">
-					<ul class="site-nav__list">
-						<li class="site-nav__item">
-							<a href="main.html" class="site-nav__link">Главная</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="purchase-methods.html" class="site-nav__link">Способы покупки</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="clients.html" class="site-nav__link">Клиентам</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="services.html" class="site-nav__link">Сервисы от СВОИХ</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="stock.html" class="site-nav__link">Акции</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="news.html" class="site-nav__link">Новости</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="reviews.html" class="site-nav__link">Отзывы</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="finances.html" class="site-nav__link">Финансовые инструменты</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="contacts.html" class="site-nav__link">Контакты</a>
-						</li>
-					</ul>
-				</nav>
+		<div class="wrapper__content wrapper__content--main">
+			<!-- main inner -->
+			<div class="main-inner" id="main-inner" style="background-image: url(img/services-all-bg.jpg);">
+				<div class="container">
+					<div class="main-inner__wrap">
+						<div class="main-inner__top">
+							<a href="main.html" class="main-inner__back">
+								<svg class="main-inner__back-icon">
+									<use xlink:href="img/sprite.svg#icon-arrow-back"></use>
+								</svg>
+								<span class="main-inner__back-title">Назад</span>
+							</a>
+							<nav class="breadcrumb breadcrumb--white main-inner__breadcrumb" aria-label="Breadcrumb">
+								<ol class="breadcrumb__list">
+									<li class="breadcrumb__item">
+										<a href="main.html" class="breadcrumb__link">Главная</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="finances.html" class="breadcrumb__link">Финансовые инструменты</a>
+									</li>
+								</ol>
+							</nav>
+						</div>
+						<div class="main-inner__main main-inner__main--center">
+							<h1 class="main-inner__heading">Единый центр финансовых <br>услуг</h1>
+							<div class="main-advantages">
+								<div class="main-advantages__item">
+									<picture class="main-advantages__icon">
+										<img src="img/main-advantages-01.svg" alt="Icon">
+									</picture>
+									<div class="main-advantages__body">
+										<h3 class="main-advantages__title">Удобно</h3>
+										<span class="main-advantages__help">Главные финансовые сервисы в одном месте</span>
+									</div>
+								</div>
+								<div class="main-advantages__item">
+									<picture class="main-advantages__icon">
+										<img src="img/main-advantages-02.svg" alt="Icon">
+									</picture>
+									<div class="main-advantages__body">
+										<h3 class="main-advantages__title">Легко</h3>
+										<span class="main-advantages__help">Простая процедура оформления</span>
+									</div>
+								</div>
+								<div class="main-advantages__item">
+									<picture class="main-advantages__icon">
+										<img src="img/main-advantages-03.svg" alt="Icon">
+									</picture>
+									<div class="main-advantages__body">
+										<h3 class="main-advantages__title">Быстро</h3>
+										<span class="main-advantages__help">Заключение любого договора за один визит</span>
+									</div>
+								</div>
+								<div class="main-advantages__item">
+									<picture class="main-advantages__icon">
+										<img src="img/main-advantages-04.svg" alt="Icon">
+									</picture>
+									<div class="main-advantages__body">
+										<h3 class="main-advantages__title">Надежно</h3>
+										<span class="main-advantages__help">Сотрудничество с крупнейшим застройщиком Тюменской области</span>
+									</div>
+								</div>
+							</div>
+							<div class="main-inner__inner main-inner__inner--border">
+								<a href="#" class="main-inner__btn btn btn--light">перейти на сайт энко.брокер</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!-- end of main inner -->
+			<!-- finances -->
+			<section class="finances" id="finances">
+				<div class="container">
+					<div class="block-heading">
+						<div class="block-heading__wrapper">
+							<h3 class="block-heading__title">Все финансовые инструменты, сконцентрированные в одном месте</h3>
+							<p class="block-heading__description">Сделать вклад, застраховать движимое или недвижимое имущество, рефинансировать кредит, сделать оценку объектов недвижимости - все это для вас выполнят наши опытные специалисты.</p>
+						</div>
+					</div>
+					<div class="finances__wrapper">
+						<article class="finances__item">
+							<picture class="finances__img">
+								<img src="img/finances-icon-01.svg" alt="Icon">
+							</picture>
+							<div class="finances__body">
+								<h3 class="finances__title">Инвестиции</h3>
+								<p class="finances__description">Доход до 12,5% годовых. Выгодная альтернатива банковским вкладам</p>
+								<a href="#" class="finances__btn btn btn--light">узнать подробнее</a>
+							</div>
+						</article>
+						<article class="finances__item">
+							<picture class="finances__img">
+								<img src="img/finances-icon-02.svg" alt="Icon">
+							</picture>
+							<div class="finances__body">
+								<h3 class="finances__title">Страхование</h3>
+								<p class="finances__description">Оформи полис страхования на сайте по лучшим тарифам</p>
+								<a href="#" class="finances__btn btn btn--light">узнать подробнее</a>
+							</div>
+						</article>
+						<article class="finances__item">
+							<picture class="finances__img">
+								<img src="img/finances-icon-03.svg" alt="Icon">
+							</picture>
+							<div class="finances__body">
+								<h3 class="finances__title">Рефинансирование кредитов</h3>
+								<p class="finances__description">Оформление и отправка заявки за пару кликов</p>
+								<a href="#" class="finances__btn btn btn--light">узнать подробнее</a>
+							</div>
+						</article>
+						<article class="finances__item">
+							<picture class="finances__img">
+								<img src="img/finances-icon-04.svg" alt="Icon">
+							</picture>
+							<div class="finances__body">
+								<h3 class="finances__title">Оценка объектов недвижимости</h3>
+								<p class="finances__description">Оформление и отправка заявки за пару кликов</p>
+								<a href="#" class="finances__btn btn btn--light">узнать подробнее</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<!-- end of finances -->
+			<!-- faq -->
+			<section class="faq" id="faq">
+				<div class="container">
+					<div class="section-heading section-heading--sm">
+						<div class="section-heading__group">
+							<h2 class="section-heading__title">Часто задаваемые вопросы</h2>
+						</div>
+					</div>
+					<div class="faq__columns">
+						<div class="faq__column">
+							<div class="c-accordeon faq__accordeons">
+								<div class="c-accordeon__item">
+									<button class="c-accordeon__trigger">
+										<span>Есть ли риски по недострою объектов недвижимости?</span>
+										<span class="c-accordeon__trigger-icon"></span>
+									</button>
+									<div class="c-accordeon__wrapper">
+										<div class="c-accordeon__content content">
+											<p>С введением изменений в 214-ФЗ и введением счетов «эскроу», компаниям, работающим в рамках этого закона, обеспечено бесперебойное финансирование строительных объектов в рамках банковского проектного финансирования.</p>
+										</div>
+									</div>
+								</div>
+								<div class="c-accordeon__item">
+									<button class="c-accordeon__trigger">
+										<span>Можно ли векселем рассчитаться за объект недвижимости по договору долевого участия?</span>
+										<span class="c-accordeon__trigger-icon"></span>
+									</button>
+									<div class="c-accordeon__wrapper">
+										<div class="c-accordeon__content content">
+											<p>Возможность выбрать лучший для себя вариант по планировке и этажу. Попасть на экскурсию на строительную площадку и вживую оценить вид из окна, реальные размеры помещений и другие характеристики.</p>
+										</div>
+									</div>
+								</div>
+								<div class="c-accordeon__item">
+									<button class="c-accordeon__trigger">
+										<span>Есть ли страхование инвестиций?</span>
+										<span class="c-accordeon__trigger-icon"></span>
+									</button>
+									<div class="c-accordeon__wrapper">
+										<div class="c-accordeon__content content">
+											<p>Возможность выбрать лучший для себя вариант по планировке и этажу. Попасть на экскурсию на строительную площадку и вживую оценить вид из окна, реальные размеры помещений и другие характеристики.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faq__column">
+							<div class="c-accordeon faq__accordeons">
+								<div class="c-accordeon__item">
+									<button class="c-accordeon__trigger">
+										<span>Кто оплачивает НДФЛ? Нужно ли подавать налоговую декларацию?</span>
+										<span class="c-accordeon__trigger-icon"></span>
+									</button>
+									<div class="c-accordeon__wrapper">
+										<div class="c-accordeon__content content">
+											<p>Возможность выбрать лучший для себя вариант по планировке и этажу. Попасть на экскурсию на строительную площадку и вживую оценить вид из окна, реальные размеры помещений и другие характеристики.</p>
+										</div>
+									</div>
+								</div>
+								<div class="c-accordeon__item">
+									<button class="c-accordeon__trigger">
+										<span>Куда ГК «ЭНКО» направляет средства инвесторов?</span>
+										<span class="c-accordeon__trigger-icon"></span>
+									</button>
+									<div class="c-accordeon__wrapper">
+										<div class="c-accordeon__content content">
+											<p>Возможность выбрать лучший для себя вариант по планировке и этажу. Попасть на экскурсию на строительную площадку и вживую оценить вид из окна, реальные размеры помещений и другие характеристики.</p>
+										</div>
+									</div>
+								</div>
+								<div class="c-accordeon__item">
+									<button class="c-accordeon__trigger">
+										<span>Почему инвестировать с ГК «ЭНКО» просто и выгодно?</span>
+										<span class="c-accordeon__trigger-icon"></span>
+									</button>
+									<div class="c-accordeon__wrapper">
+										<div class="c-accordeon__content content">
+											<p>Возможность выбрать лучший для себя вариант по планировке и этажу. Попасть на экскурсию на строительную площадку и вживую оценить вид из окна, реальные размеры помещений и другие характеристики.</p>
+										</div>
+									</div>
+								</div>
+								<div class="c-accordeon__item">
+									<button class="c-accordeon__trigger">
+										<span>Кто оплачивает НДФЛ? Нужно ли подавать налоговую декларацию?</span>
+										<span class="c-accordeon__trigger-icon"></span>
+									</button>
+									<div class="c-accordeon__wrapper">
+										<div class="c-accordeon__content content">
+											<p>Возможность выбрать лучший для себя вариант по планировке и этажу. Попасть на экскурсию на строительную площадку и вживую оценить вид из окна, реальные размеры помещений и другие характеристики.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of faq -->
+			<!-- documents -->
+			<section class="documents documents--border" id="documents">
+				<div class="container">
+					<div class="section-heading section-heading--sm">
+						<div class="section-heading__group">
+							<h2 class="section-heading__title">Документы</h2>
+						</div>
+					</div>
+					<div class="documents__wrapper">
+						<a href="#" class="documents__item documents__item--white" download>
+							<span class="documents__title">Проектная декларация с <br>изменениями от 08.02.2021</span>
+							<div class="documents__body">
+								<div class="documents__block">
+									<span class="documents__icon-wrap">
+										<svg class="documents__icon">
+											<use xlink:href="img/sprite.svg#icon-pdf"></use>
+										</svg>
+									</span>
+									<div class="documents__group">
+										<div class="documents__inner">
+											<span class="documents__text">Документ размещен: <span>30.12.2016</span></span>
+											<span class="documents__text">Разместил: <span>Иванов И.И.</span></span>
+										</div>
+									</div>
+								</div>
+								<span class="documents__icon-wrap documents__icon-wrap--light">
+									<svg class="documents__icon">
+										<use xlink:href="img/sprite.svg#icon-download"></use>
+									</svg>
+								</span>
+							</div>
+						</a>
+						<a href="#" class="documents__item documents__item--white" download>
+							<span class="documents__title">Проектная декларация с <br>изменениями от 22.01.2021</span>
+							<div class="documents__body">
+								<div class="documents__block">
+									<span class="documents__icon-wrap">
+										<svg class="documents__icon">
+											<use xlink:href="img/sprite.svg#icon-doc"></use>
+										</svg>
+									</span>
+									<div class="documents__group">
+										<div class="documents__inner">
+											<span class="documents__text">Документ размещен: <span>30.12.2016</span></span>
+											<span class="documents__text">Разместил: <span>Иванов И.И.</span></span>
+										</div>
+									</div>
+								</div>
+								<span class="documents__icon-wrap documents__icon-wrap--light">
+									<svg class="documents__icon">
+										<use xlink:href="img/sprite.svg#icon-download"></use>
+									</svg>
+								</span>
+							</div>
+						</a>
+						<a href="#" class="documents__item documents__item--white" download>
+							<span class="documents__title">Проектная декларация с <br>изменениями от 22.01.2021</span>
+							<div class="documents__body">
+								<div class="documents__block">
+									<span class="documents__icon-wrap">
+										<svg class="documents__icon">
+											<use xlink:href="img/sprite.svg#icon-doc"></use>
+										</svg>
+									</span>
+									<div class="documents__group">
+										<div class="documents__inner">
+											<span class="documents__text">Документ размещен: <span>30.12.2016</span></span>
+											<span class="documents__text">Разместил: <span>Иванов И.И.</span></span>
+										</div>
+									</div>
+								</div>
+								<span class="documents__icon-wrap documents__icon-wrap--light">
+									<svg class="documents__icon">
+										<use xlink:href="img/sprite.svg#icon-download"></use>
+									</svg>
+								</span>
+							</div>
+						</a>
+					</div>
+					<a href="#" class="documents__more btn btn--light">Показать еще 50</a>
+				</div>
+			</section>
+			<!-- end of documents -->
+			<!-- choice -->
+			<section class="choice choice--no-border" id="choice">
+				<div class="container">
+					<picture class="choice__img">
+						<img src="img/choice-form-01.jpg" alt="Image">
+					</picture>
+					<div class="choice__body">
+						<h2 class="choice__title">Есть вопросы? <br>Поможем!</h2>
+						<p class="choice__description">Оставьте заявку, и наш менеджер перезвонит вам в течении 15 минут</p>
+						<a href="#" class="choice__btn btn btn--light">отправить заявку</a>
+					</div>
+					<form action="#" class="choice-form choice__form">
+						<div class="choice-form__form-wrap">
+							<div class="input-control choice-form__input">
+								<input type="text" class="input-control__input" placeholder="Ваше имя">
+							</div>
+							<div class="input-control choice-form__input">
+								<input type="text" class="input-control__input" placeholder="Телефон">
+							</div>
+							<button class="choice-form__btn btn">отправить</button>
+						</div>
+						<p class="choice-form__help">Нажимая кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</p>
+					</form>
+				</div>
+			</section>
+			<!-- end of choice -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
