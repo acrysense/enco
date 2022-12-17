@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ЭНКО - Способы покупки</title>
+	<title>ЭНКО - Ипотека онлайн</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -15,7 +15,7 @@
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
-		<header class="header @@header" id="header">
+		<header class="header header--transparent" id="header">
 			<div class="header__top">
 				<div class="container">
 					<div class="header__wrapper">
@@ -492,146 +492,282 @@
 		</div>
 		<!-- end of menu -->
 		<!-- content -->
-		<div class="wrapper__content">
-			<!-- page top -->
-			<div class="page-top" id="page-top">
+		<div class="wrapper__content wrapper__content--main">
+			<!-- main inner -->
+			<div class="main-inner" id="main-inner" style="background-image: url(img/mortgage-online-bg.jpg);">
 				<div class="container">
-					<div class="page-top__inner">
-						<a href="main.html" class="page-top__back">
-							<svg class="page-top__back-icon">
-								<use xlink:href="img/sprite.svg#icon-arrow-back"></use>
-							</svg>
-							<span class="page-top__back-title">Назад</span>
-						</a>
-						<nav class="breadcrumb page-top__breadcrumb" aria-label="Breadcrumb">
-							<ol class="breadcrumb__list">
-								<li class="breadcrumb__item">
-									<a href="main.html" class="breadcrumb__link">Главная</a>
-								</li>
-								<li class="breadcrumb__item">
-									<a href="purchase-methods.html" class="breadcrumb__link">Способы покупки</a>
-								</li>
-							</ol>
-						</nav>
-					</div>
-					<h1 class="page-top__heading">Способы покупки</h1>
-					<div class="page-top__nav page-navigation">
-						<a href="trade-in.html" class="page-navigation__item">
-							<picture class="page-navigation__icon">
-								<img src="img/purchase-methods-icon-01.svg" alt="Icon">
-							</picture>
-							<div class="page-navigation__group">
-								<div class="page-navigation__body">
-									<span class="page-navigation__title">Трейд-ин</span>
-									<span class="page-navigation__tags">Обмен вашей квартиры</span>
-									<span class="page-navigation__tags">Обмен от СВОИх</span>
-								</div>
-							</div>
-						</a>
-						<a href="mortgage-online.html" class="page-navigation__item">
-							<picture class="page-navigation__icon">
-								<img src="img/purchase-methods-icon-01.svg" alt="Icon">
-							</picture>
-							<div class="page-navigation__group">
-								<div class="page-navigation__body">
-									<span class="page-navigation__title">Ипотека онлайн</span>
-									<span class="page-navigation__help">Описание способа покупки</span>
-								</div>
-								<svg class="page-navigation__arrow">
-									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+					<div class="main-inner__wrap">
+						<div class="main-inner__top">
+							<a href="purchase-methods.html" class="main-inner__back">
+								<svg class="main-inner__back-icon">
+									<use xlink:href="img/sprite.svg#icon-arrow-back"></use>
 								</svg>
+								<span class="main-inner__back-title">Назад</span>
+							</a>
+							<nav class="breadcrumb breadcrumb--white main-inner__breadcrumb" aria-label="Breadcrumb">
+								<ol class="breadcrumb__list">
+									<li class="breadcrumb__item">
+										<a href="main.html" class="breadcrumb__link">Главная</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="purchase-methods.html" class="breadcrumb__link">Способы покупки</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="mortgage-online.html" class="breadcrumb__link">Ипотека онлайн</a>
+									</li>
+								</ol>
+							</nav>
+						</div>
+						<div class="main-inner__main">
+							<h1 class="main-inner__heading">Купить квартиру в ипотеку просто</h1>
+							<p class="main-inner__description">с бесплатной помощью специалистов <br>Ипотечного центра ГК «ЭНКО»</p>
+							<div class="main-inner__inner">
+								<a href="#" class="main-inner__btn btn btn--light">оставить заявку</a>
 							</div>
-						</a>
-						<a href="full-payment.html" class="page-navigation__item">
-							<picture class="page-navigation__icon">
-								<img src="img/purchase-methods-icon-01.svg" alt="Icon">
-							</picture>
-							<div class="page-navigation__group">
-								<div class="page-navigation__body">
-									<span class="page-navigation__title">100% оплата</span>
-									<span class="page-navigation__help">Описание способа покупки</span>
-								</div>
-								<svg class="page-navigation__arrow">
-									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
-								</svg>
-							</div>
-						</a>
-						<a href="installment-plan.html" class="page-navigation__item">
-							<picture class="page-navigation__icon">
-								<img src="img/purchase-methods-icon-01.svg" alt="Icon">
-							</picture>
-							<div class="page-navigation__group">
-								<div class="page-navigation__body">
-									<span class="page-navigation__title">Рассрочка</span>
-									<span class="page-navigation__help">Описание способа покупки</span>
-								</div>
-								<svg class="page-navigation__arrow">
-									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
-								</svg>
-							</div>
-						</a>
-						<a href="maternal-capital.html" class="page-navigation__item">
-							<picture class="page-navigation__icon">
-								<img src="img/purchase-methods-icon-01.svg" alt="Icon">
-							</picture>
-							<div class="page-navigation__group">
-								<div class="page-navigation__body">
-									<span class="page-navigation__title">Материнский капитал</span>
-									<span class="page-navigation__help">Описание способа покупки</span>
-								</div>
-								<svg class="page-navigation__arrow">
-									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
-								</svg>
-							</div>
-						</a>
-						<a href="remote-purchase.html" class="page-navigation__item">
-							<picture class="page-navigation__icon">
-								<img src="img/purchase-methods-icon-01.svg" alt="Icon">
-							</picture>
-							<div class="page-navigation__group">
-								<div class="page-navigation__body">
-									<span class="page-navigation__title">Дистанционная покупка</span>
-									<span class="page-navigation__help">Описание способа покупки</span>
-								</div>
-								<svg class="page-navigation__arrow">
-									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
-								</svg>
-							</div>
-						</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<!-- end of page top -->
-			<!-- choice -->
-			<section class="choice choice--no-border" id="choice">
+			<!-- end of main inner -->
+			<!-- preferential mortgage -->
+			<section class="preferential-mortgage" id="preferential-mortgage">
+				<div class="container"></div>
+			</section>
+			<!-- end of preferential mortgage -->
+			<!-- how it works -->
+			<section class="hiw" id="hiw">
 				<div class="container">
-					<picture class="choice__img">
-						<img src="img/choice-form-01.jpg" alt="Image">
-					</picture>
-					<div class="choice__body">
-						<h2 class="choice__title">Помочь с <br>выбором?</h2>
-						<p class="choice__description">Оставьте заявку, и наш менеджер перезвонит вам в течении 15 минут</p>
-						<a href="#" class="choice__btn btn btn--light">отправить заявку</a>
-					</div>
-					<form action="#" class="choice-form choice__form">
-						<div class="choice-form__form-wrap">
-							<div class="input-control choice-form__input">
-								<input type="text" class="input-control__input" placeholder="Ваше имя">
-							</div>
-							<div class="input-control choice-form__input">
-								<input type="text" class="input-control__input" placeholder="Телефон">
-							</div>
-							<button class="choice-form__btn btn">отправить</button>
+					<div class="section-heading section-heading--sm">
+						<div class="section-heading__group">
+							<h2 class="section-heading__title">Четыре простых шага к новой квартире</h2>
 						</div>
-						<p class="choice-form__help">Нажимая кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</p>
-					</form>
+					</div>
+					<div class="hiw__slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article class="hiw__slide">
+										<h3 class="hiw__title">Консультация по ипотеке</h3>
+										<a href="#" class="hiw__btn btn btn--light">Получить</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="hiw__slide">
+										<h3 class="hiw__title">Получение одобрения по ипотеке</h3>
+										<a href="#" class="hiw__btn btn btn--light">Получить</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="hiw__slide">
+										<h3 class="hiw__title">Взаимодействие с банком</h3>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="hiw__slide">
+										<h3 class="hiw__title">Подписание документов</h3>
+									</article>
+								</div>
+							</div>
+							<div class="swiper-controls">
+								<button class="swiper-button-prev" aria-label="Назад">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</button>
+								<button class="swiper-button-next" aria-label="Далее">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</button>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
-			<!-- end of choice -->
+			<!-- end of how it works -->
+			<!-- selections -->
+			<section class="selections" id="selections">
+				<div class="container">
+					<div class="section-heading">
+						<h2 class="section-heading__title">подборки</h2>
+					</div>
+					<div class="selections__wrapper">
+						<a href="#" class="selections__item selections__item--white">
+							<picture class="selections__icon">
+								<img src="img/selections-icon-01.svg" alt="Icon">
+							</picture>
+							<span class="selections__title">Квартиры у реки</span>
+							<span class="selections__price">от 5 800 000 ₽</span>
+						</a>
+						<a href="#" class="selections__item" style="background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(img/selections-bg-01.jpg);">
+							<span class="selections__title">Студии</span>
+							<span class="selections__price">от 2 700 000 ₽</span>
+						</a>
+						<a href="#" class="selections__item" style="background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(img/selections-bg-02.jpg);">
+							<picture class="selections__icon">
+								<img src="img/selections-icon-02.svg" alt="Icon">
+							</picture>
+							<span class="selections__title">Видовые</span>
+							<span class="selections__price">от 11 400 000 ₽</span>
+						</a>
+						<a href="#" class="selections__item selections__item--white">
+							<span class="selections__title">1К</span>
+							<span class="selections__price">от 3 900 000 ₽</span>
+							<picture class="selections__img">
+								<img src="img/selections-01.png" alt="Image">
+							</picture>
+						</a>
+						<a href="#" class="selections__item selections__item--white">
+							<span class="selections__title">2К</span>
+							<span class="selections__price">от 5 600 000 ₽</span>
+							<picture class="selections__img">
+								<img src="img/selections-02.png" alt="Image">
+							</picture>
+						</a>
+						<a href="#" class="selections__item">
+							<picture class="selections__icon">
+								<img src="img/selections-icon-03.svg" alt="Icon">
+							</picture>
+							<span class="selections__title">С террасами</span>
+							<span class="selections__price">от 6 100 000 ₽</span>
+						</a>
+					</div>
+					<div class="selections-promo">
+						<a href="#" class="selections-promo__item">
+							<div class="selections-promo__body">
+								<div class="selections-promo__group">
+									<span class="selections-promo__title">Коммерческие помещения</span>
+								</div>
+								<svg class="selections-promo__arrow">
+									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+								</svg>
+							</div>
+							<picture class="selections-promo__img">
+								<img src="img/selections-promo-01.svg" alt="Icon">
+							</picture>
+						</a>
+						<a href="#" class="selections-promo__item">
+							<div class="selections-promo__body">
+								<div class="selections-promo__group">
+									<span class="selections-promo__title">Кладовки</span>
+									<span class="selections-promo__discount">5% скидка покупателям квартир</span>
+								</div>
+								<svg class="selections-promo__arrow">
+									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+								</svg>
+							</div>
+							<picture class="selections-promo__img">
+								<img src="img/selections-promo-02.svg" alt="Icon">
+							</picture>
+						</a>
+						<a href="#" class="selections-promo__item">
+							<div class="selections-promo__body">
+								<div class="selections-promo__group">
+									<span class="selections-promo__title">Машиноместа</span>
+								</div>
+								<svg class="selections-promo__arrow">
+									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+								</svg>
+							</div>
+							<picture class="selections-promo__img">
+								<img src="img/selections-promo-03.svg" alt="Icon">
+							</picture>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- end of selections -->
+			<!-- faq -->
+			<section class="faq" id="faq">
+				<div class="container">
+					<div class="faq__wrapper">
+						<div class="faq__left">
+							<div class="section-heading section-heading--sm">
+								<div class="section-heading__group">
+									<h2 class="section-heading__title">Часто задаваемые вопросы</h2>
+								</div>
+							</div>
+							<div class="c-accordeon faq__accordeons">
+								<div class="c-accordeon__item">
+									<button class="c-accordeon__trigger">
+										<span>Вы покупаете именно ту квартиру, которая вам подходит</span>
+										<span class="c-accordeon__trigger-icon"></span>
+									</button>
+									<div class="c-accordeon__wrapper">
+										<div class="c-accordeon__content content">
+											<p>Возможность выбрать лучший для себя вариант по планировке и этажу. Попасть на экскурсию на строительную площадку и вживую оценить вид из окна, реальные размеры помещений и другие характеристики.</p>
+										</div>
+									</div>
+								</div>
+								<div class="c-accordeon__item">
+									<button class="c-accordeon__trigger">
+										<span>Написать реальные вопросы</span>
+										<span class="c-accordeon__trigger-icon"></span>
+									</button>
+									<div class="c-accordeon__wrapper">
+										<div class="c-accordeon__content content">
+											<p>Возможность выбрать лучший для себя вариант по планировке и этажу. Попасть на экскурсию на строительную площадку и вживую оценить вид из окна, реальные размеры помещений и другие характеристики.</p>
+										</div>
+									</div>
+								</div>
+								<div class="c-accordeon__item">
+									<button class="c-accordeon__trigger">
+										<span>Живите в своей квартире еще 2 месяца после продажи</span>
+										<span class="c-accordeon__trigger-icon"></span>
+									</button>
+									<div class="c-accordeon__wrapper">
+										<div class="c-accordeon__content content">
+											<p>Возможность выбрать лучший для себя вариант по планировке и этажу. Попасть на экскурсию на строительную площадку и вживую оценить вид из окна, реальные размеры помещений и другие характеристики.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faq__right">
+							<div class="faq__block">
+								<picture class="faq__img">
+									<img src="img/faq-ava.jpg" alt="Image">
+								</picture>
+								<div class="faq__body">
+									<h3 class="faq__title">Есть вопросы?</h3>
+									<p class="faq__description">Позвоните по номеру +7-932-323-10-81 или заполните форму, чтобы получить консультацию нашего специалиста</p>
+									<a href="#" class="faq__btn btn btn--light">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of faq -->
+			<!-- legal informration -->
+			<section class="legal-informration" id="legal-informration">
+				<div class="container">
+					<div class="legal-informration__wrapper legal-informration__wrapper--grey">
+						<h3 class="legal-informration__title">Юридическая информация</h3>
+						<div class="legal-informration__description">
+							<p>
+								C 01.07.2021 по 01.02.2022 в рамках программы «Ипотека с государственной поддержкой для семей с детьми» можно приобрести жилую недвижимость на первичном рынке у юридического лица как на стадии строительства, так и как готовое жильё от застройщика по ставке от 5% годовых на срок кредита от 12 до 360 месяцев включительно у НАИМЕНОВАНИЕ ПАРТНЕРА и при условии оформления страхования жизни и здоровья заемщика в ООО СК «Сбербанк страхование жизни» или в других аккредитованных ПАО Сбербанк компаниях (страхование обязательно при выдаче кредита). При отказе заемщика от страхования жизни и здоровья процентная ставка увеличивается до 6% годовых.
+								<br><br>
+								Первоначальный взнос от 15% от стоимости кредитуемого жилого помещения. Минимальная сумма кредита – 300 тыс. руб. Максимальный размер кредита до 12 000 000 ₽ - при покупке жилья в Москве и Московской области, Санкт-Петербурге и Ленинградской области; до 6 000 000 ₽ при покупке жилья в других регионах. Валюта – рубли РФ.
+								<br><br>
+								Кредит предоставляется гражданам РФ, у которых в период с 1 января 2018 г. до 1 марта 2023 г. родился ребенок, гражданин РФ. Необходимо предоставление свидетельств о рождении всех детей, а также подтверждение гражданства РФ ребенка, рожденного после 1 января 2018 года.
+								<br><br>
+								Дополнительные расходы: страхование жизни и здоровья заемщика, страхование и оценка объекта недвижимости, оформляемого в залог (тарифы зависят от индивидуальных особенностей заемщика), нотариальное заверение документов, направление документов на гос. регистрацию ДДУ в электронном виде. Обеспечение по кредиту – залог кредитуемого или иного жилого помещения.
+								<br><br>
+								Итоговая сумма кредита определяется индивидуально, на основании оценки платежеспособности и обеспечения заемщика. Банк вправе отказать в выдаче кредита без объяснения причин. Изменение условий – Банком в одностороннем порядке.
+								<br><br>
+								Подробнее об условиях кредитования на www.sberbank.ru. Реклама. ПАО Сбербанк. Генеральная лицензия Банка России на осуществление банковских операций №1481 от 11.08.2015.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of legal information -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
-		<footer class="footer @@footer" id="footer">
+		<footer class="footer footer--mt" id="footer">
 			<div class="footer__main">
 				<div class="container">
 					<div class="footer__main-mobile">
