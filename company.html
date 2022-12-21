@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ЭНКО - Навигация</title>
+	<title>ЭНКО - Компания</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -15,7 +15,7 @@
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
-		<header class="header @@header" id="header">
+		<header class="header header--transparent" id="header">
 			<div class="header__top">
 				<div class="container">
 					<div class="header__wrapper">
@@ -492,43 +492,483 @@
 		</div>
 		<!-- end of menu -->
 		<!-- content -->
-		<div class="wrapper__content">
-			<div class="container">
-				<nav class="site-nav">
-					<ul class="site-nav__list">
-						<li class="site-nav__item">
-							<a href="main.html" class="site-nav__link">Главная</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="purchase-methods.html" class="site-nav__link">Способы покупки</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="clients.html" class="site-nav__link">Клиентам</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="services.html" class="site-nav__link">Сервисы от СВОИХ</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="stock.html" class="site-nav__link">Акции</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="company.html" class="site-nav__link">Компания</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="news.html" class="site-nav__link">Новости</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="reviews.html" class="site-nav__link">Отзывы</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="finances.html" class="site-nav__link">Финансовые инструменты</a>
-						</li>
-						<li class="site-nav__item">
-							<a href="contacts.html" class="site-nav__link">Контакты</a>
-						</li>
-					</ul>
-				</nav>
+		<div class="wrapper__content wrapper__content--main">
+			<!-- main inner -->
+			<div class="main-inner" id="main-inner" style="background-image: url(img/company-bg-01.jpg);">
+				<div class="container">
+					<div class="main-inner__wrap">
+						<div class="main-inner__top">
+							<a href="main.html" class="main-inner__back">
+								<svg class="main-inner__back-icon">
+									<use xlink:href="img/sprite.svg#icon-arrow-back"></use>
+								</svg>
+								<span class="main-inner__back-title">Назад</span>
+							</a>
+							<nav class="breadcrumb breadcrumb--white main-inner__breadcrumb" aria-label="Breadcrumb">
+								<ol class="breadcrumb__list">
+									<li class="breadcrumb__item">
+										<a href="main.html" class="breadcrumb__link">Главная</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="company.html" class="breadcrumb__link">Компания</a>
+									</li>
+								</ol>
+							</nav>
+						</div>
+						<div class="main-inner__main">
+							<h1 class="main-inner__heading">Группа компаний «ЭНКО» – один из крупнейших застройщиков Тюменской области</h1>
+							<p class="main-inner__description">Первая в Тюмени многофункциональная площадка для реализации общественного, профессионального и творческого потенциала жителей района.</p>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!-- end of main inner -->
+			<!-- news -->
+			<section class="news" id="news">
+				<div class="container">
+					<div class="section-heading">
+						<h2 class="section-heading__title">Новости</h2>
+						<div class="section-heading__group section-heading__group--desktop">
+							<a href="#" class="section-heading__link">
+								<span>все новости</span>
+								<svg class="section-heading__link-icon">
+									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="news__slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#" class="news__slide">
+										<picture class="news__img">
+											<img src="img/news-01.jpg" alt="Image">
+										</picture>
+										<div class="news__body">
+											<div class="news__group">
+												<span class="news__title">Ход строительства Никольского</span>
+												<span class="news__description">Ведутся работы по чистовой отделке — плитка в санузлах, оклейка стен обоями.</span>
+											</div>
+											<span class="news__date">13 января 2023</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="news__slide">
+										<picture class="news__img">
+											<img src="img/news-02.jpg" alt="Image">
+										</picture>
+										<div class="news__body">
+											<div class="news__group">
+												<span class="news__title">Инфраструктура айвазовского</span>
+												<span class="news__description">Ведутся работы по чистовой отделке — плитка в санузлах, оклейка стен обоями.</span>
+											</div>
+											<span class="news__date">13 января 2023</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="news__slide">
+										<picture class="news__img">
+											<img src="img/news-03.jpg" alt="Image">
+										</picture>
+										<div class="news__body">
+											<div class="news__group">
+												<span class="news__title">Инфраструктура айвазовского</span>
+												<span class="news__description">Ведутся работы по чистовой отделке — плитка в санузлах, оклейка стен обоями.</span>
+											</div>
+											<span class="news__date">13 января 2023</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="news__slide">
+										<picture class="news__img">
+											<img src="img/news-04.jpg" alt="Image">
+										</picture>
+										<div class="news__body">
+											<div class="news__group">
+												<span class="news__title">Что изменилось? Преимущества соседского</span>
+												<span class="news__description">Ведутся работы по чистовой отделке — плитка в санузлах, оклейка стен обоями.</span>
+											</div>
+											<span class="news__date">13 января 2023</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-controls">
+								<button class="swiper-button-prev" aria-label="Назад">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</button>
+								<div class="swiper-pagination"></div>
+								<button class="swiper-button-next" aria-label="Далее">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="section-heading section-heading--mobile">
+						<a href="#" class="section-heading__link">
+							<span>все новости</span>
+							<svg class="section-heading__link-icon">
+								<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- end of news -->
+			<!-- released projects -->
+			<section class="completed-projects" id="completed-projects">
+				<div class="container">
+					<div class="section-heading">
+						<h2 class="section-heading__title">Реализованные проекты</h2>
+					</div>
+					<div class="completed-projects__wrapper">
+						<article class="completed-projects__item">
+							<picture class="completed-projects__img">
+								<img src="img/completed-projects-01.jpg" alt="Image">
+								<picture class="completed-projects__logotype">
+									<img src="img/completed-projects-logo-01.png" alt="Logo">
+								</picture>
+							</picture>
+							<div class="completed-projects__body">
+								<div class="completed-projects__inner">
+									<h3 class="completed-projects__title">луч</h3>
+									<span class="completed-projects__text">2018 год</span>
+								</div>
+								<div class="completed-projects__info">
+									<div class="completed-projects__info-inner">
+										<span class="completed-projects__location">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-location"></use>
+											</svg>
+											<span>Дом Обороны</span>
+										</span>
+										<span class="completed-projects__location">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-car"></use>
+											</svg>
+											<span>8 мин. → центр</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="completed-projects__item">
+							<picture class="completed-projects__img">
+								<img src="img/completed-projects-02.jpg" alt="Image">
+								<picture class="completed-projects__logotype">
+									<img src="img/completed-projects-logo-02.png" alt="Logo">
+								</picture>
+							</picture>
+							<div class="completed-projects__body">
+								<div class="completed-projects__inner">
+									<h3 class="completed-projects__title">вертикаль</h3>
+									<span class="completed-projects__text">2017 год</span>
+								</div>
+								<div class="completed-projects__info">
+									<div class="completed-projects__info-inner">
+										<span class="completed-projects__location">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-location"></use>
+											</svg>
+											<span>Дом Обороны</span>
+										</span>
+										<span class="completed-projects__location">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-car"></use>
+											</svg>
+											<span>8 мин. → центр</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="completed-projects__item">
+							<picture class="completed-projects__img">
+								<img src="img/completed-projects-03.jpg" alt="Image">
+								<picture class="completed-projects__logotype">
+									<img src="img/completed-projects-logo-03.png" alt="Logo">
+								</picture>
+							</picture>
+							<div class="completed-projects__body">
+								<div class="completed-projects__inner">
+									<h3 class="completed-projects__title">времена года</h3>
+									<span class="completed-projects__text">2017 год</span>
+								</div>
+								<div class="completed-projects__info">
+									<div class="completed-projects__info-inner">
+										<span class="completed-projects__location">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-location"></use>
+											</svg>
+											<span>Дом Обороны</span>
+										</span>
+										<span class="completed-projects__location">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-car"></use>
+											</svg>
+											<span>8 мин. → центр</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="completed-projects__item">
+							<picture class="completed-projects__img">
+								<img src="img/completed-projects-04.jpg" alt="Image">
+								<picture class="completed-projects__logotype">
+									<img src="img/completed-projects-logo-04.png" alt="Logo">
+								</picture>
+							</picture>
+							<div class="completed-projects__body">
+								<div class="completed-projects__inner">
+									<h3 class="completed-projects__title">лукоморье</h3>
+									<span class="completed-projects__text">2016 год</span>
+								</div>
+								<div class="completed-projects__info">
+									<div class="completed-projects__info-inner">
+										<span class="completed-projects__location">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-location"></use>
+											</svg>
+											<span>Дом Обороны</span>
+										</span>
+										<span class="completed-projects__location">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-car"></use>
+											</svg>
+											<span>8 мин. → центр</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="completed-projects__item">
+							<picture class="completed-projects__img">
+								<img src="img/completed-projects-05.jpg" alt="Image">
+								<picture class="completed-projects__logotype">
+									<img src="img/completed-projects-logo-05.png" alt="Logo">
+								</picture>
+							</picture>
+							<div class="completed-projects__body">
+								<div class="completed-projects__inner">
+									<h3 class="completed-projects__title">шоколад</h3>
+									<span class="completed-projects__text">2017 год</span>
+								</div>
+								<div class="completed-projects__info">
+									<div class="completed-projects__info-inner">
+										<span class="completed-projects__location">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-location"></use>
+											</svg>
+											<span>Дом Обороны</span>
+										</span>
+										<span class="completed-projects__location">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-car"></use>
+											</svg>
+											<span>8 мин. → центр</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="completed-projects__item">
+							<picture class="completed-projects__img">
+								<img src="img/completed-projects-06.jpg" alt="Image">
+								<picture class="completed-projects__logotype">
+									<img src="img/completed-projects-logo-06.png" alt="Logo">
+								</picture>
+							</picture>
+							<div class="completed-projects__body">
+								<div class="completed-projects__inner">
+									<h3 class="completed-projects__title">преображенский</h3>
+									<span class="completed-projects__text">2020 год</span>
+								</div>
+								<div class="completed-projects__info">
+									<div class="completed-projects__info-inner">
+										<span class="completed-projects__location">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-location"></use>
+											</svg>
+											<span>Дом Обороны</span>
+										</span>
+										<span class="completed-projects__location">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-car"></use>
+											</svg>
+											<span>8 мин. → центр</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<a href="#" class="completed-projects__more btn btn--light">Показать еще 3 проекта</a>
+				</div>
+			</section>
+			<!-- end of released projects -->
+			<!-- tenders -->
+			<section class="tenders" id="tenders">
+				<div class="container">
+					<div class="tenders__wrapper">
+						<picture class="tenders__img">
+							<img src="img/tenders-01.jpg" alt="Image">
+						</picture>
+						<div class="tenders__body">
+							<h3 class="tenders__title">Тендеры</h3>
+							<a href="#" class="tenders__btn btn btn--light">ПОдробнее</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- eend of tenders -->
+			<!-- reviews -->
+			<section class="reviews" id="reviews">
+				<div class="container">
+					<div class="section-heading">
+						<h2 class="section-heading__title">Жизнь с ЭНКО</h2>
+						<div class="section-heading__group section-heading__group--desktop">
+							<a href="#" class="section-heading__link section-heading__link">
+								<span>все отзывы</span>
+								<svg class="section-heading__link-icon">
+									<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="reviews__slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article class="reviews__item">
+										<picture class="reviews__img">
+											<img src="img/reviews-01.jpg" alt="Image">
+										</picture>
+										<div class="reviews__body">
+											<div class="reviews__group">
+												<h3 class="reviews__title">Максимилиан Бендер-Задунайский</h3>
+												<p class="reviews__description">Хороший новый район. Лес рядом. Школа, детский сад, поликлиника строится. Спортивные площадки неплохие. Долго снимал квартиру, потом решил, что лучше за свое платить. Купил однушку в ЖК Никольский. Дом в конце года сдается. Пока все нормально. Строят.</p>
+											</div>
+											<a href="#" class="reviews__link">
+												<svg class="reviews__link-icon">
+													<use xlink:href="img/sprite.svg#icon-youtube"></use>
+												</svg>
+												<span>Смотреть видео</span>
+											</a>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="reviews__item">
+										<picture class="reviews__img">
+											<img src="img/reviews-02.jpg" alt="Image">
+										</picture>
+										<div class="reviews__body">
+											<div class="reviews__group">
+												<h3 class="reviews__title">Евгения</h3>
+												<p class="reviews__description">Я приобрела недвижимость в айвазовском, в первой очереди гп 43. квартира 48 квадратов, отделка была черновая, но наняла бригаду и сделали мне за месяц все как надо. район неплохой, рядом магазины, детский сад и восьмая.</p>
+											</div>
+											<a href="#" class="reviews__link">
+												<svg class="reviews__link-icon">
+													<use xlink:href="img/sprite.svg#icon-youtube"></use>
+												</svg>
+												<span>читать отзыв</span>
+											</a>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="reviews__item">
+										<picture class="reviews__img">
+											<img src="img/reviews-03.jpg" alt="Image">
+										</picture>
+										<div class="reviews__body">
+											<div class="reviews__group">
+												<h3 class="reviews__title">Анастасия</h3>
+												<p class="reviews__description">Приобрел однушку в ЖК "Преображенский". Понравилась, как и планировка квартиры, так и место, где она строится. Ибо к моему новому жилью здесь делают и всю необходимую инфраструктуру. Дом будет сдан в 4-м квартале 23 года, то есть ждать осталось не так уж и долго.</p>
+											</div>
+											<a href="#" class="reviews__link">
+												<svg class="reviews__link-icon">
+													<use xlink:href="img/sprite.svg#icon-youtube"></use>
+												</svg>
+												<span>Смотреть видео</span>
+											</a>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="reviews__item">
+										<picture class="reviews__img">
+											<img src="img/reviews-04.jpg" alt="Image">
+										</picture>
+										<div class="reviews__body">
+											<div class="reviews__group">
+												<h3 class="reviews__title">Мария К.</h3>
+												<p class="reviews__description">Новоселье — это прекрасное время. Но чтобы чувствовать себя максимально комфортно, нужно правильно организовать и спланировать процесс. Мы провели интервью у жительницы нашего микрорайона Евгении, где она поделилась своим мнением.</p>
+											</div>
+											<a href="#" class="reviews__link">
+												<svg class="reviews__link-icon">
+													<use xlink:href="img/sprite.svg#icon-youtube"></use>
+												</svg>
+												<span>Смотреть видео</span>
+											</a>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="swiper-controls">
+								<button class="swiper-button-prev" aria-label="Назад">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</button>
+								<div class="swiper-pagination"></div>
+								<button class="swiper-button-next" aria-label="Далее">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="section-heading section-heading--mobile">
+						<a href="#" class="section-heading__link">
+							<span>все отзывы</span>
+							<svg class="section-heading__link-icon">
+								<use xlink:href="img/sprite.svg#icon-arrow-link"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- end of reviews -->
+			<!-- tenders -->
+			<section class="tenders" id="tenders">
+				<div class="container">
+					<div class="tenders__wrapper">
+						<picture class="tenders__img">
+							<img src="img/tenders-02.jpg" alt="Image">
+						</picture>
+						<div class="tenders__body">
+							<h3 class="tenders__title">Карьера в ЭНКО</h3>
+							<a href="#" class="tenders__btn btn btn--light">ПОдробнее</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- eend of tenders -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
